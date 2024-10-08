@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\d3303414\\source\\repos\\inventorycpp\\intermediate\\build\\win64\\unrealeditor\\inc\\inventorycpp\\uht\\inventorycppgamemode.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\d3303414\\source\\repos\\inventorycpp\\intermediate\\build\\win64\\x64\\inventorycppeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\d3303414\\source\\repos\\inventorycpp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\inventorycpp\\definitions.inventorycpp.h",
+            "c:\\users\\d3303414\\source\\repos\\inventorycpp\\source\\inventorycpp\\inventorycppgamemode.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\users\\d3303414\\source\\repos\\inventorycpp\\intermediate\\build\\win64\\unrealeditor\\inc\\inventorycpp\\uht\\inventorycppgamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

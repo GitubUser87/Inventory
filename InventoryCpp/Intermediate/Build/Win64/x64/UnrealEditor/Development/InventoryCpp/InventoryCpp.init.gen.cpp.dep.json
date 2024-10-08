@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\d3303414\\source\\repos\\inventorycpp\\intermediate\\build\\win64\\unrealeditor\\inc\\inventorycpp\\uht\\inventorycpp.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\d3303414\\source\\repos\\inventorycpp\\intermediate\\build\\win64\\x64\\inventorycppeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\d3303414\\source\\repos\\inventorycpp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\inventorycpp\\definitions.inventorycpp.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

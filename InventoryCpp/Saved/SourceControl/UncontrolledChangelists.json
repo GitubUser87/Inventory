@@ -1,0 +1,15 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/D3303414/Source/repos/InventoryCpp/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Users/D3303414/Source/repos/InventoryCpp/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/8K/0OLPBOSZCPU1X7E3PCLCGF.uasset",
+				"C:/Users/D3303414/Source/repos/InventoryCpp/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/9/VL/R3EXE397EWWQSE6C0QFJX3.uasset",
+				"C:/Users/D3303414/Source/repos/InventoryCpp/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/2/07/9DXJKUU9KYRMMCVSZSDTHP.uasset"
+			]
+		}
+	]
+}
