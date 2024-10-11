@@ -15,10 +15,13 @@ struct FInventoryStruct
 	FString name;
 
 	UPROPERTY(VisibleAnywhere)
-	int spaceleft;
+	int spaceleft[10];
 
 	UPROPERTY()
 	int currentnumcount;
+
+	UPROPERTY()
+	AItems* item;
 };
 
 

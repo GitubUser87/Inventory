@@ -21,7 +21,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 template<> INVENTORYCPP_API UScriptStruct* StaticStruct<struct FInventoryStruct>();
 
-#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_28_INCLASS_NO_PURE_DECLS \
+#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_31_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPlayerInventory(); \
 	friend struct Z_Construct_UClass_APlayerInventory_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(APlayerInventory)
 
 
-#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_28_ENHANCED_CONSTRUCTORS \
+#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_31_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	APlayerInventory(APlayerInventory&&); \
@@ -42,12 +42,12 @@ public: \
 	NO_API virtual ~APlayerInventory();
 
 
-#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_25_PROLOG
-#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_28_GENERATED_BODY \
+#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_28_PROLOG
+#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_31_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_28_INCLASS_NO_PURE_DECLS \
-	FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_28_ENHANCED_CONSTRUCTORS \
+	FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_31_INCLASS_NO_PURE_DECLS \
+	FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_31_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -21,6 +21,13 @@ struct FItemStruct
 	UPROPERTY(EditAnywhere)
 	float weight;
 
+	UPROPERTY(EditAnywhere)
+	bool consumable;
+
+	UPROPERTY(EditAnywhere)
+	bool weapon;
+
+
 };
 //UCLASS()
 //class UBoxComponent : public UShapeComponent

@@ -11,6 +11,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerInventory() {}
 
 // Begin Cross Module References
 ENGINE_API UClass* Z_Construct_UClass_AActor();
+INVENTORYCPP_API UClass* Z_Construct_UClass_AItems_NoRegister();
 INVENTORYCPP_API UClass* Z_Construct_UClass_APlayerInventory();
 INVENTORYCPP_API UClass* Z_Construct_UClass_APlayerInventory_NoRegister();
 INVENTORYCPP_API UScriptStruct* Z_Construct_UScriptStruct_FInventoryStruct();
@@ -48,10 +49,14 @@ struct Z_Construct_UScriptStruct_FInventoryStruct_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_currentnumcount_MetaData[] = {
 		{ "ModuleRelativePath", "Public/PlayerInventory.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_item_MetaData[] = {
+		{ "ModuleRelativePath", "Public/PlayerInventory.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStrPropertyParams NewProp_name;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_spaceleft;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_currentnumcount;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_item;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static void* NewStructOps()
 	{
@@ -60,12 +65,14 @@ struct Z_Construct_UScriptStruct_FInventoryStruct_Statics
 	static const UECodeGen_Private::FStructParams StructParams;
 };
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FInventoryStruct_Statics::NewProp_name = { "name", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FInventoryStruct, name), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_name_MetaData), NewProp_name_MetaData) };
-const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FInventoryStruct_Statics::NewProp_spaceleft = { "spaceleft", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FInventoryStruct, spaceleft), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_spaceleft_MetaData), NewProp_spaceleft_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FInventoryStruct_Statics::NewProp_spaceleft = { "spaceleft", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, CPP_ARRAY_DIM(spaceleft, FInventoryStruct), STRUCT_OFFSET(FInventoryStruct, spaceleft), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_spaceleft_MetaData), NewProp_spaceleft_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FInventoryStruct_Statics::NewProp_currentnumcount = { "currentnumcount", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FInventoryStruct, currentnumcount), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_currentnumcount_MetaData), NewProp_currentnumcount_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FInventoryStruct_Statics::NewProp_item = { "item", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FInventoryStruct, item), Z_Construct_UClass_AItems_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_item_MetaData), NewProp_item_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FInventoryStruct_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FInventoryStruct_Statics::NewProp_name,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FInventoryStruct_Statics::NewProp_spaceleft,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FInventoryStruct_Statics::NewProp_currentnumcount,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FInventoryStruct_Statics::NewProp_item,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FInventoryStruct_Statics::PropPointers) < 2048);
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FInventoryStruct_Statics::StructParams = {
@@ -120,7 +127,7 @@ struct Z_Construct_UClass_APlayerInventory_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_APlayerInventory_Statics::NewProp_InventoryInfo = { "InventoryInfo", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInventory, InventoryInfo), Z_Construct_UScriptStruct_FInventoryStruct, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InventoryInfo_MetaData), NewProp_InventoryInfo_MetaData) }; // 1176023713
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_APlayerInventory_Statics::NewProp_InventoryInfo = { "InventoryInfo", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerInventory, InventoryInfo), Z_Construct_UScriptStruct_FInventoryStruct, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InventoryInfo_MetaData), NewProp_InventoryInfo_MetaData) }; // 451195495
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APlayerInventory_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerInventory_Statics::NewProp_InventoryInfo,
 };
@@ -165,13 +172,13 @@ APlayerInventory::~APlayerInventory() {}
 struct Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FInventoryStruct::StaticStruct, Z_Construct_UScriptStruct_FInventoryStruct_Statics::NewStructOps, TEXT("InventoryStruct"), &Z_Registration_Info_UScriptStruct_InventoryStruct, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FInventoryStruct), 1176023713U) },
+		{ FInventoryStruct::StaticStruct, Z_Construct_UScriptStruct_FInventoryStruct_Statics::NewStructOps, TEXT("InventoryStruct"), &Z_Registration_Info_UScriptStruct_InventoryStruct, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FInventoryStruct), 451195495U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_APlayerInventory, APlayerInventory::StaticClass, TEXT("APlayerInventory"), &Z_Registration_Info_UClass_APlayerInventory, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerInventory), 2962901107U) },
+		{ Z_Construct_UClass_APlayerInventory, APlayerInventory::StaticClass, TEXT("APlayerInventory"), &Z_Registration_Info_UClass_APlayerInventory, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerInventory), 957077671U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_1825651094(TEXT("/Script/InventoryCpp"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_1291641740(TEXT("/Script/InventoryCpp"),
 	Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_PlayerInventory_h_Statics::ScriptStructInfo),
 	nullptr, 0);

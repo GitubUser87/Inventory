@@ -1,19 +1,19 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\d3303414\\source\\repos\\inventorycpp\\intermediate\\build\\win64\\unrealeditor\\inc\\inventorycpp\\uht\\playerinventory.gen.cpp",
+        "Source": "c:\\users\\d3303414\\source\\repos\\inventory\\inventorycpp\\intermediate\\build\\win64\\unrealeditor\\inc\\inventorycpp\\uht\\playerinventory.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\d3303414\\source\\repos\\inventorycpp\\intermediate\\build\\win64\\x64\\inventorycppeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "c:\\users\\d3303414\\source\\repos\\inventory\\inventorycpp\\intermediate\\build\\win64\\x64\\inventorycppeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "c:\\users\\d3303414\\source\\repos\\inventorycpp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\inventorycpp\\definitions.inventorycpp.h",
-            "c:\\users\\d3303414\\source\\repos\\inventorycpp\\source\\inventorycpp\\public\\playerinventory.h",
-            "c:\\users\\d3303414\\source\\repos\\inventorycpp\\source\\inventorycpp\\public\\items.h",
+            "c:\\users\\d3303414\\source\\repos\\inventory\\inventorycpp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\inventorycpp\\definitions.inventorycpp.h",
+            "c:\\users\\d3303414\\source\\repos\\inventory\\inventorycpp\\source\\inventorycpp\\public\\playerinventory.h",
+            "c:\\users\\d3303414\\source\\repos\\inventory\\inventorycpp\\source\\inventorycpp\\public\\items.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\boxcomponent.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\boxcomponent.generated.h",
-            "c:\\users\\d3303414\\source\\repos\\inventorycpp\\intermediate\\build\\win64\\unrealeditor\\inc\\inventorycpp\\uht\\items.generated.h",
-            "c:\\users\\d3303414\\source\\repos\\inventorycpp\\intermediate\\build\\win64\\unrealeditor\\inc\\inventorycpp\\uht\\playerinventory.generated.h"
+            "c:\\users\\d3303414\\source\\repos\\inventory\\inventorycpp\\intermediate\\build\\win64\\unrealeditor\\inc\\inventorycpp\\uht\\items.generated.h",
+            "c:\\users\\d3303414\\source\\repos\\inventory\\inventorycpp\\intermediate\\build\\win64\\unrealeditor\\inc\\inventorycpp\\uht\\playerinventory.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
