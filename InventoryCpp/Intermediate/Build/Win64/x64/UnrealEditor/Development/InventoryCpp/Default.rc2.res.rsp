@@ -80,5 +80,5 @@
 /DBUILD_ICON_FILE_NAME="\"..\\Build\\Windows\\Resources\\Default.ico\""
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
 /DPROJECT_PRODUCT_IDENTIFIER=InventoryCpp
-/fo "C:\Users\D3303414\Source\repos\InventoryCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\InventoryCpp\Default.rc2.res"
+/fo "C:\Users\D3303414\Source\repos\Inventory\InventoryCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\InventoryCpp\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"

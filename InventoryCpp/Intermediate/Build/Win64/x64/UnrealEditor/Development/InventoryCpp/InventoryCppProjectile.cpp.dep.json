@@ -1,13 +1,13 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\d3303414\\source\\repos\\inventorycpp\\source\\inventorycpp\\inventorycppprojectile.cpp",
+        "Source": "c:\\users\\d3303414\\source\\repos\\inventory\\inventorycpp\\source\\inventorycpp\\inventorycppprojectile.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\d3303414\\source\\repos\\inventorycpp\\intermediate\\build\\win64\\x64\\inventorycppeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "c:\\users\\d3303414\\source\\repos\\inventory\\inventorycpp\\intermediate\\build\\win64\\x64\\inventorycppeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "c:\\users\\d3303414\\source\\repos\\inventorycpp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\inventorycpp\\definitions.inventorycpp.h",
-            "c:\\users\\d3303414\\source\\repos\\inventorycpp\\source\\inventorycpp\\inventorycppprojectile.h",
-            "c:\\users\\d3303414\\source\\repos\\inventorycpp\\intermediate\\build\\win64\\unrealeditor\\inc\\inventorycpp\\uht\\inventorycppprojectile.generated.h",
+            "c:\\users\\d3303414\\source\\repos\\inventory\\inventorycpp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\inventorycpp\\definitions.inventorycpp.h",
+            "c:\\users\\d3303414\\source\\repos\\inventory\\inventorycpp\\source\\inventorycpp\\inventorycppprojectile.h",
+            "c:\\users\\d3303414\\source\\repos\\inventory\\inventorycpp\\intermediate\\build\\win64\\unrealeditor\\inc\\inventorycpp\\uht\\inventorycppprojectile.generated.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\projectilemovementcomponent.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\movementcomponent.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\movementcomponent.generated.h",
