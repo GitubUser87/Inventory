@@ -31,11 +31,7 @@ struct FItemStruct
 
 
 };
-//UCLASS()
-//class UBoxComponent : public UShapeComponent
-//{
-//
-//};
+
 
 UCLASS()
 class INVENTORYCPP_API AItems : public AActor
