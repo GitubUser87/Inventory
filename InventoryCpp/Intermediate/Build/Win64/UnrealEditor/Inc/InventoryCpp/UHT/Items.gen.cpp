@@ -285,14 +285,8 @@ struct Z_Construct_UClass_AItems_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//UCLASS()\n//class UBoxComponent : public UShapeComponent\n//{\n//\n//};\n" },
-#endif
 		{ "IncludePath", "Items.h" },
 		{ "ModuleRelativePath", "Public/Items.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "UCLASS()\nclass UBoxComponent : public UShapeComponent\n{\n\n};" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_itemInfo_MetaData[] = {
 		{ "Category", "Item Stats" },
@@ -375,10 +369,10 @@ struct Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_Inventory
 		{ FItemStruct::StaticStruct, Z_Construct_UScriptStruct_FItemStruct_Statics::NewStructOps, TEXT("ItemStruct"), &Z_Registration_Info_UScriptStruct_ItemStruct, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FItemStruct), 965836579U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AItems, AItems::StaticClass, TEXT("AItems"), &Z_Registration_Info_UClass_AItems, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AItems), 2838161396U) },
+		{ Z_Construct_UClass_AItems, AItems::StaticClass, TEXT("AItems"), &Z_Registration_Info_UClass_AItems, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AItems), 4206502962U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_2085413125(TEXT("/Script/InventoryCpp"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_3222994270(TEXT("/Script/InventoryCpp"),
 	Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_Statics::ScriptStructInfo),
 	nullptr, 0);
