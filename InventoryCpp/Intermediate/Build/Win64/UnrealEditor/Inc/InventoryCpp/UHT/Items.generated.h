@@ -17,28 +17,28 @@ struct FHitResult;
 #endif
 #define INVENTORYCPP_Items_generated_h
 
-#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_15_GENERATED_BODY \
+#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_14_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemStruct_Statics; \
 	INVENTORYCPP_API static class UScriptStruct* StaticStruct();
 
 
 template<> INVENTORYCPP_API UScriptStruct* StaticStruct<struct FItemStruct>();
 
-#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_39_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOverlapEnd); \
 	DECLARE_FUNCTION(execOverlapBegin);
 
 
-#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_39_INCLASS_NO_PURE_DECLS \
+#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_38_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAItems(); \
 	friend struct Z_Construct_UClass_AItems_Statics; \
 public: \
-	DECLARE_CLASS(AItems, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/InventoryCpp"), NO_API) \
+	DECLARE_CLASS(AItems, AActor, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/InventoryCpp"), NO_API) \
 	DECLARE_SERIALIZER(AItems)
 
 
-#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_39_ENHANCED_CONSTRUCTORS \
+#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_38_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AItems(AItems&&); \
@@ -46,17 +46,17 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AItems); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AItems); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AItems) \
+	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(AItems) \
 	NO_API virtual ~AItems();
 
 
-#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_36_PROLOG
-#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_39_GENERATED_BODY \
+#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_35_PROLOG
+#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_38_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_39_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_39_INCLASS_NO_PURE_DECLS \
-	FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_39_ENHANCED_CONSTRUCTORS \
+	FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_38_INCLASS_NO_PURE_DECLS \
+	FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_38_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

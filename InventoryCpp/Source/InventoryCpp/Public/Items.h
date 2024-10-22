@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-
 #include "Items.generated.h"
 
 class UBoxComponent;
@@ -33,7 +32,7 @@ struct FItemStruct
 };
 
 
-UCLASS()
+UCLASS(Blueprintable, Abstract)
 class INVENTORYCPP_API AItems : public AActor
 {
 	GENERATED_BODY()

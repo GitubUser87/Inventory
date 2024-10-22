@@ -2,6 +2,7 @@
 
 
 #include "Items.h"
+#include "InventoryCppCharacter.generated.h"
 #include "Components/BoxComponent.h"
 
 
@@ -31,7 +32,15 @@ void AItems::BeginPlay()
 void AItems::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	
+	//AInventoryCppCharacter* PlayerChar = Cast<AInventoryCppCharacter>(OtherActor);
+
+		if (OtherActor)
+		{
+			FString SomeOtherText = TEXT("Something");
+			//FString::Printf(TEXT("MyText %s", *SomeOtherText));
+			UE_LOG(LogTemp, Warning, TEXT("Test Log"));
+
+		}
 }
 
 void AItems::OverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
