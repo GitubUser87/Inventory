@@ -9,12 +9,17 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPlayerInventoryComponent;
 #ifdef INVENTORYCPP_InventoryCppCharacter_generated_h
 #error "InventoryCppCharacter.generated.h already included, missing '#pragma once' in InventoryCppCharacter.h"
 #endif
 #define INVENTORYCPP_InventoryCppCharacter_generated_h
 
-#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_22_INCLASS_NO_PURE_DECLS \
+#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetItems);
+
+
+#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_23_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAInventoryCppCharacter(); \
 	friend struct Z_Construct_UClass_AInventoryCppCharacter_Statics; \
@@ -23,7 +28,7 @@ public: \
 	DECLARE_SERIALIZER(AInventoryCppCharacter)
 
 
-#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_22_ENHANCED_CONSTRUCTORS \
+#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AInventoryCppCharacter(AInventoryCppCharacter&&); \
@@ -35,12 +40,13 @@ public: \
 	NO_API virtual ~AInventoryCppCharacter();
 
 
-#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_19_PROLOG
-#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_22_GENERATED_BODY \
+#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_20_PROLOG
+#define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_22_INCLASS_NO_PURE_DECLS \
-	FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_22_ENHANCED_CONSTRUCTORS \
+	FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_23_INCLASS_NO_PURE_DECLS \
+	FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

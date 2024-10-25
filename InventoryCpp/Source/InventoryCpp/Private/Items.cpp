@@ -41,6 +41,7 @@ void AItems::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* Othe
 			UE_LOG(LogTemp, Warning, TEXT("Test Log"));
 
 		}
+		//inventorycharacter
 }
 
 void AItems::OverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,

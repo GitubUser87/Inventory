@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zq6drg8Gc90=",
+  "dgSpecHash": "ZA1b/sVmbPk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\D3303414\\Source\\repos\\InventoryCpp\\Intermediate\\Build\\BuildRulesProjects\\InventoryCppModuleRules\\InventoryCppModuleRules.csproj",
+  "projectFilePath": "C:\\Users\\D3303414\\Source\\repos\\Inventory\\InventoryCpp\\Intermediate\\Build\\BuildRulesProjects\\InventoryCppModuleRules\\InventoryCppModuleRules.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\D3303414\\.nuget\\packages\\bitfaster.caching\\2.4.1\\bitfaster.caching.2.4.1.nupkg.sha512",
     "C:\\Users\\D3303414\\.nuget\\packages\\blake3\\0.5.1\\blake3.0.5.1.nupkg.sha512",

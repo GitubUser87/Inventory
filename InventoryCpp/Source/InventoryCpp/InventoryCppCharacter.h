@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
+#include "PlayerInventoryComponent.h"
 #include "InventoryCppCharacter.generated.h"
 
 class UInputComponent;
@@ -36,9 +37,14 @@ class AInventoryCppCharacter : public ACharacter
 	/** Move Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	UInputAction* MoveAction;
+
+	UPlayerInventoryComponent* _inventory;
 	
 public:
 	AInventoryCppCharacter();
+
+	UFUNCTION(BlueprintCallable)
+	UPlayerInventoryComponent* GetItems() { return _inventory; };
 
 protected:
 	virtual void BeginPlay();

@@ -87,6 +87,9 @@
     <ClCompile Include="..\..\Source\InventoryCpp\Private\PlayerInventory.cpp">
       <Filter>Source\InventoryCpp\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\InventoryCpp\Private\PlayerInventoryComponent.cpp">
+      <Filter>Source\InventoryCpp\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\InventoryCpp\Public">
       <UniqueIdentifier>{0E60518E-E71D-3824-9754-DEB59C50280F}</UniqueIdentifier>
     </Filter>
@@ -96,6 +99,8 @@
     <ClInclude Include="..\..\Source\InventoryCpp\Public\PlayerInventory.h">
       <Filter>Source\InventoryCpp\Public</Filter>
     </ClInclude>
-    <None Include="cpp.hint" />
+    <ClInclude Include="..\..\Source\InventoryCpp\Public\PlayerInventoryComponent.h">
+      <Filter>Source\InventoryCpp\Public</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
