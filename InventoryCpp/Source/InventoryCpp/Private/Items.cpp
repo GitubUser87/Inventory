@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
-#include "Items.h"
 #include "InventoryCppCharacter.generated.h"
+#include "Items.h"
+
 #include "Components/BoxComponent.h"
 
 
@@ -21,6 +21,25 @@ AItems::AItems()
 	Box->SetRelativeLocation(FVector(0.0f, 0.0f, 100.0f));
 }
 
+void AItems::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	
+	AInventoryCppCharacter* tempactor = (AInventoryCppCharacter*)OtherActor;
+
+	/*if (IsValid(tempactor))
+	{
+
+		tempactor -> GetItems()->AddItems(_name, _value);
+		
+	}*/
+}
+
+void AItems::OverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+
+}
 // Called when the game starts or when spawned
 void AItems::BeginPlay()
 {
@@ -29,26 +48,7 @@ void AItems::BeginPlay()
 	Box->OnComponentEndOverlap.AddDynamic(this, &AItems::OverlapEnd);
 }
 
-void AItems::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
-	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
-{
-	//AInventoryCppCharacter* PlayerChar = Cast<AInventoryCppCharacter>(OtherActor);
 
-		if (OtherActor)
-		{
-			FString SomeOtherText = TEXT("Something");
-			//FString::Printf(TEXT("MyText %s", *SomeOtherText));
-			UE_LOG(LogTemp, Warning, TEXT("Test Log"));
-
-		}
-		//inventorycharacter
-}
-
-void AItems::OverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
-	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
-{
-	
-}
 
 
 // Called every frame

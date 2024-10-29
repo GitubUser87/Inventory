@@ -1,6 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "InventoryCppCharacter.h"
+#include "PlayerInventoryComponent.h"
 #include "InventoryCppProjectile.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"

@@ -177,7 +177,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AItems
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AItems_OverlapBegin_Statics::NewProp_SweepResult,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AItems_OverlapBegin_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AItems_OverlapBegin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AItems, nullptr, "OverlapBegin", nullptr, nullptr, Z_Construct_UFunction_AItems_OverlapBegin_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AItems_OverlapBegin_Statics::PropPointers), sizeof(Z_Construct_UFunction_AItems_OverlapBegin_Statics::Items_eventOverlapBegin_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00480401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AItems_OverlapBegin_Statics::Function_MetaDataParams), Z_Construct_UFunction_AItems_OverlapBegin_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AItems_OverlapBegin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AItems, nullptr, "OverlapBegin", nullptr, nullptr, Z_Construct_UFunction_AItems_OverlapBegin_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AItems_OverlapBegin_Statics::PropPointers), sizeof(Z_Construct_UFunction_AItems_OverlapBegin_Statics::Items_eventOverlapBegin_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AItems_OverlapBegin_Statics::Function_MetaDataParams), Z_Construct_UFunction_AItems_OverlapBegin_Statics::Function_MetaDataParams) };
 static_assert(sizeof(Z_Construct_UFunction_AItems_OverlapBegin_Statics::Items_eventOverlapBegin_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AItems_OverlapBegin()
 {
@@ -310,7 +310,7 @@ struct Z_Construct_UClass_AItems_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AItems_OverlapBegin, "OverlapBegin" }, // 804440334
+		{ &Z_Construct_UFunction_AItems_OverlapBegin, "OverlapBegin" }, // 3146086563
 		{ &Z_Construct_UFunction_AItems_OverlapEnd, "OverlapEnd" }, // 1469545234
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -371,10 +371,10 @@ struct Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_Inventory
 		{ FItemStruct::StaticStruct, Z_Construct_UScriptStruct_FItemStruct_Statics::NewStructOps, TEXT("ItemStruct"), &Z_Registration_Info_UScriptStruct_ItemStruct, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FItemStruct), 965836579U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AItems, AItems::StaticClass, TEXT("AItems"), &Z_Registration_Info_UClass_AItems, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AItems), 954638216U) },
+		{ Z_Construct_UClass_AItems, AItems::StaticClass, TEXT("AItems"), &Z_Registration_Info_UClass_AItems, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AItems), 2810304185U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_3075490189(TEXT("/Script/InventoryCpp"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_530245413(TEXT("/Script/InventoryCpp"),
 	Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_Statics::ScriptStructInfo),
 	nullptr, 0);
