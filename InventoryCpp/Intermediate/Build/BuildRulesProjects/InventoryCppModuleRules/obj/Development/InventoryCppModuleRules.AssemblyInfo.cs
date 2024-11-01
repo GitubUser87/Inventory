@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InventoryCppModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c70e5075b4e40fec7bc64a0b4d3bb19a9f9fcf5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c8763d69c715b44ff6d26cc804131270184d36c")]
 [assembly: System.Reflection.AssemblyProductAttribute("InventoryCppModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InventoryCppModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
