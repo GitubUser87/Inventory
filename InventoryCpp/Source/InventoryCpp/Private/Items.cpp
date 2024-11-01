@@ -1,9 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "InventoryCppCharacter.generated.h"
 #include "Items.h"
-
 #include "Components/BoxComponent.h"
+#include "InventoryCppCharacter.generated.h"
+
+class AInventoryCppCharacter;
 
 
 // Sets default values
@@ -24,13 +25,13 @@ AItems::AItems()
 void AItems::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	
-	AInventoryCppCharacter* tempactor = (AInventoryCppCharacter*)OtherActor;
+	UE_LOG(LogTemp, Warning, TEXT("Overlapped!"));
+	AInventoryCppCharacter* tempActor = (AInventoryCppCharacter*)OtherActor;
 
-	/*if (IsValid(tempactor))
+	/*if (IsValid(tempActor)) 
 	{
 
-		tempactor -> GetItems()->AddItems(_name, _value);
+		tempActor->GetItems()->AddItems(_name, _value);
 		
 	}*/
 }
