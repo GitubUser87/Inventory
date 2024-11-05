@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "Items.h"
 #include "PlayerInventoryComponent.generated.h"
 
 
@@ -27,12 +28,12 @@ public:
 	// Sets default values for this component's properties
 	UPlayerInventoryComponent();
 
-	TArray<FmyInventoryItems> _Items;
+	TArray<FItemStruct> _Items;
 
 	UFUNCTION(BlueprintCallable)
 	FString GetItems();
 
-	void AddItems(FString iname, int ivalue);
+	void AddItems(FItemStruct i);
 
 protected:
 	// Called when the game starts

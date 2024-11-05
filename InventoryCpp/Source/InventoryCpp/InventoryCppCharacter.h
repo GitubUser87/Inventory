@@ -44,7 +44,7 @@ public:
 	AInventoryCppCharacter();
 
 	UFUNCTION(BlueprintCallable)
-	UPlayerInventoryComponent* GetItems() { return _inventory; };
+	UPlayerInventoryComponent* GetItem() { return _inventory; };
 
 protected:
 	virtual void BeginPlay();
