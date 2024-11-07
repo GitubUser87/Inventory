@@ -25,8 +25,8 @@ FString UPlayerInventoryComponent::GetItems()
 		tempstring.AppendInt(_Items[Index].value);
 		tempstring += TEXT(" Weight: ");
 		tempstring.AppendInt( _Items[Index].weight);
-		tempstring += TEXT(" Consumable?: ");
-		tempstring.AppendInt(_Items[Index].consumable);
+		/*tempstring += TEXT(" Consumable?: ");
+		tempstring.AppendInt(_Items[Index].consumable);*/
 		tempstring += LINE_TERMINATOR;
 	}
 	return tempstring;
