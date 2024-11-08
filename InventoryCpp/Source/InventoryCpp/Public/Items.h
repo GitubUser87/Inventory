@@ -8,24 +8,24 @@
 
 class UBoxComponent;
 
-USTRUCT()
+USTRUCT(Blueprintable, BlueprintType)
 struct FItemStruct
 {
 	GENERATED_BODY()
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	FString name;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	int value;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	float weight;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	bool consumable;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	bool weapon;
 
 
@@ -41,7 +41,7 @@ public:
 	// Sets default values for this actor's properties
 	AItems();
 
-	UPROPERTY(EditAnywhere, Category = "Item Stats")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite,	Category = "Item Stats")
 	FItemStruct itemInfo;
 
 	UPROPERTY(EditAnywhere)
