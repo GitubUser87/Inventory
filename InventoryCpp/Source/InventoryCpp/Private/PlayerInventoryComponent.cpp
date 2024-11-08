@@ -39,7 +39,7 @@ void UPlayerInventoryComponent::AddItems(FItemStruct i)
 	//tempstruct.itemname = iname;
 	//tempstruct.value = ivalue;
 
-	_Items.Add(i);
+	//_Items.Add(i);
 }
 
 
