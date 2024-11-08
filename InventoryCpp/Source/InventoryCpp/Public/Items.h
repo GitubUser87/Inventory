@@ -29,7 +29,7 @@ struct FItemStruct
 	bool weapon;
 
 	/*UPROPERTY(BlueprintReadWrite, EditAnywhere)
-	bool weapon;*/
+	UStaticMeshComponent*  _mymesh;*/
 };
 
 
@@ -45,7 +45,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,	Category = "Item Stats")
 	FItemStruct itemInfo;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UStaticMeshComponent* ItemMesh;
 
 	UFUNCTION()
