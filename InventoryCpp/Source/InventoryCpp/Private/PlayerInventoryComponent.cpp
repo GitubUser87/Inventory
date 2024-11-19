@@ -34,12 +34,12 @@ FString UPlayerInventoryComponent::GetItems()
 
 void UPlayerInventoryComponent::AddItems(FItemStruct i)
 {
-	//FmyInventoryItems tempstruct;
+	/*FmyInventoryItems tempstruct;
 
-	//tempstruct.itemname = iname;
-	//tempstruct.value = ivalue;
+	tempstruct.itemname = iname;
+	tempstruct.value = ivalue;
 
-	//_Items.Add(i);
+	_Items.Add(i);*/
 }
 
 

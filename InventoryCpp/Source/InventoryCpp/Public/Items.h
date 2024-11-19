@@ -33,7 +33,7 @@ struct FItemStruct
 };
 
 
-UCLASS(Blueprintable, Abstract)
+UCLASS(Blueprintable)
 class INVENTORYCPP_API AItems : public AActor
 {
 	GENERATED_BODY()

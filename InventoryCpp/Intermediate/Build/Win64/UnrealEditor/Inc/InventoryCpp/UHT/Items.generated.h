@@ -34,7 +34,7 @@ private: \
 	static void StaticRegisterNativesAItems(); \
 	friend struct Z_Construct_UClass_AItems_Statics; \
 public: \
-	DECLARE_CLASS(AItems, AActor, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/InventoryCpp"), NO_API) \
+	DECLARE_CLASS(AItems, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/InventoryCpp"), NO_API) \
 	DECLARE_SERIALIZER(AItems)
 
 
@@ -46,7 +46,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AItems); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AItems); \
-	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(AItems) \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AItems) \
 	NO_API virtual ~AItems();
 
 

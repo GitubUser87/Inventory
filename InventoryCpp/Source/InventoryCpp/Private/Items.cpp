@@ -24,6 +24,8 @@ AItems::AItems()
 	Box->SetRelativeLocation(FVector(0.0f, 0.0f, 100.0f));
 }
 
+
+
 void AItems::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
