@@ -21,25 +21,28 @@ FString UPlayerInventoryComponent::GetItems()
 	for (int32 Index = 0; Index != _Items.Num(); ++Index)
 	{
 		tempstring += _Items[Index].name;
-		tempstring += TEXT(" Value: ");
-		tempstring.AppendInt(_Items[Index].value);
-		tempstring += TEXT(" Weight: ");
-		tempstring.AppendInt( _Items[Index].weight);
-		/*tempstring += TEXT(" Consumable?: ");
-		tempstring.AppendInt(_Items[Index].consumable);*/
+		//tempstring += TEXT(" Value: ");
+		//tempstring.AppendInt(_Items[Index].value);
+		//tempstring += TEXT(" Weight: ");
+		//tempstring.AppendInt( _Items[Index].weight);
 		tempstring += LINE_TERMINATOR;
 	}
 	return tempstring;
 }
 
+void UPlayerInventoryComponent::GetAnItem(int32 index)
+{
+	//FString Item = _Items[index].name;
+}
+
 void UPlayerInventoryComponent::AddItems(FItemStruct i)
 {
-	/*FmyInventoryItems tempstruct;
+	FmyInventoryItems tempstruct;
 
-	tempstruct.itemname = iname;
-	tempstruct.value = ivalue;
+	//tempstruct.itemname = iname;
+	//tempstruct.value = ivalue;
 
-	_Items.Add(i);*/
+	_Items.Add(i);
 }
 
 

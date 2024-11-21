@@ -20,10 +20,10 @@ INVENTORYCPP_API UClass* Z_Construct_UClass_UPlayerInventoryComponent_NoRegister
 UPackage* Z_Construct_UPackage__Script_InventoryCpp();
 // End Cross Module References
 
-// Begin Class AInventoryCppCharacter Function GetItem
-struct Z_Construct_UFunction_AInventoryCppCharacter_GetItem_Statics
+// Begin Class AInventoryCppCharacter Function GetInventory
+struct Z_Construct_UFunction_AInventoryCppCharacter_GetInventory_Statics
 {
-	struct InventoryCppCharacter_eventGetItem_Parms
+	struct InventoryCppCharacter_eventGetInventory_Parms
 	{
 		UPlayerInventoryComponent* ReturnValue;
 	};
@@ -39,37 +39,37 @@ struct Z_Construct_UFunction_AInventoryCppCharacter_GetItem_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AInventoryCppCharacter_GetItem_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(InventoryCppCharacter_eventGetItem_Parms, ReturnValue), Z_Construct_UClass_UPlayerInventoryComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AInventoryCppCharacter_GetItem_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AInventoryCppCharacter_GetItem_Statics::NewProp_ReturnValue,
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AInventoryCppCharacter_GetInventory_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(InventoryCppCharacter_eventGetInventory_Parms, ReturnValue), Z_Construct_UClass_UPlayerInventoryComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AInventoryCppCharacter_GetInventory_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AInventoryCppCharacter_GetInventory_Statics::NewProp_ReturnValue,
 };
-static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AInventoryCppCharacter_GetItem_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AInventoryCppCharacter_GetItem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AInventoryCppCharacter, nullptr, "GetItem", nullptr, nullptr, Z_Construct_UFunction_AInventoryCppCharacter_GetItem_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AInventoryCppCharacter_GetItem_Statics::PropPointers), sizeof(Z_Construct_UFunction_AInventoryCppCharacter_GetItem_Statics::InventoryCppCharacter_eventGetItem_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AInventoryCppCharacter_GetItem_Statics::Function_MetaDataParams), Z_Construct_UFunction_AInventoryCppCharacter_GetItem_Statics::Function_MetaDataParams) };
-static_assert(sizeof(Z_Construct_UFunction_AInventoryCppCharacter_GetItem_Statics::InventoryCppCharacter_eventGetItem_Parms) < MAX_uint16);
-UFunction* Z_Construct_UFunction_AInventoryCppCharacter_GetItem()
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AInventoryCppCharacter_GetInventory_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AInventoryCppCharacter_GetInventory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AInventoryCppCharacter, nullptr, "GetInventory", nullptr, nullptr, Z_Construct_UFunction_AInventoryCppCharacter_GetInventory_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AInventoryCppCharacter_GetInventory_Statics::PropPointers), sizeof(Z_Construct_UFunction_AInventoryCppCharacter_GetInventory_Statics::InventoryCppCharacter_eventGetInventory_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AInventoryCppCharacter_GetInventory_Statics::Function_MetaDataParams), Z_Construct_UFunction_AInventoryCppCharacter_GetInventory_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_AInventoryCppCharacter_GetInventory_Statics::InventoryCppCharacter_eventGetInventory_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AInventoryCppCharacter_GetInventory()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AInventoryCppCharacter_GetItem_Statics::FuncParams);
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AInventoryCppCharacter_GetInventory_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
-DEFINE_FUNCTION(AInventoryCppCharacter::execGetItem)
+DEFINE_FUNCTION(AInventoryCppCharacter::execGetInventory)
 {
 	P_FINISH;
 	P_NATIVE_BEGIN;
-	*(UPlayerInventoryComponent**)Z_Param__Result=P_THIS->GetItem();
+	*(UPlayerInventoryComponent**)Z_Param__Result=P_THIS->GetInventory();
 	P_NATIVE_END;
 }
-// End Class AInventoryCppCharacter Function GetItem
+// End Class AInventoryCppCharacter Function GetInventory
 
 // Begin Class AInventoryCppCharacter
 void AInventoryCppCharacter::StaticRegisterNativesAInventoryCppCharacter()
 {
 	UClass* Class = AInventoryCppCharacter::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
-		{ "GetItem", &AInventoryCppCharacter::execGetItem },
+		{ "GetInventory", &AInventoryCppCharacter::execGetInventory },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -152,7 +152,7 @@ struct Z_Construct_UClass_AInventoryCppCharacter_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AInventoryCppCharacter_GetItem, "GetItem" }, // 2074712784
+		{ &Z_Construct_UFunction_AInventoryCppCharacter_GetInventory, "GetInventory" }, // 1551183449
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -213,10 +213,10 @@ AInventoryCppCharacter::~AInventoryCppCharacter() {}
 struct Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AInventoryCppCharacter, AInventoryCppCharacter::StaticClass, TEXT("AInventoryCppCharacter"), &Z_Registration_Info_UClass_AInventoryCppCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AInventoryCppCharacter), 3166156276U) },
+		{ Z_Construct_UClass_AInventoryCppCharacter, AInventoryCppCharacter::StaticClass, TEXT("AInventoryCppCharacter"), &Z_Registration_Info_UClass_AInventoryCppCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AInventoryCppCharacter), 414831858U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_591173019(TEXT("/Script/InventoryCpp"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_2129406007(TEXT("/Script/InventoryCpp"),
 	Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

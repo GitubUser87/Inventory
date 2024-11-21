@@ -16,7 +16,7 @@ class UPlayerInventoryComponent;
 #define INVENTORYCPP_InventoryCppCharacter_generated_h
 
 #define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
-	DECLARE_FUNCTION(execGetItem);
+	DECLARE_FUNCTION(execGetInventory);
 
 
 #define FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_InventoryCppCharacter_h_23_INCLASS_NO_PURE_DECLS \

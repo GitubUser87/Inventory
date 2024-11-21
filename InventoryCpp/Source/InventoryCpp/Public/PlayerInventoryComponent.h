@@ -33,6 +33,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	FString GetItems();
 
+	void GetAnItem(int32 index);
+
 	void AddItems(FItemStruct i);
 
 protected:
