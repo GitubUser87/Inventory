@@ -59,7 +59,7 @@ protected:
 
 	FString Message = FString(TEXT("Hello!"));
 
-	UPROPERTY()
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UBoxComponent* Box;
 
 	

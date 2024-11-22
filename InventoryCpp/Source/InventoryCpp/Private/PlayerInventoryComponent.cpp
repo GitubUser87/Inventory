@@ -26,13 +26,16 @@ FString UPlayerInventoryComponent::GetItems()
 		//tempstring += TEXT(" Weight: ");
 		//tempstring.AppendInt( _Items[Index].weight);
 		tempstring += LINE_TERMINATOR;
+		
 	}
 	return tempstring;
 }
 
-void UPlayerInventoryComponent::GetAnItem(int32 index)
+FItemStruct UPlayerInventoryComponent::GetAnItem(int32 index)
 {
+	UE_LOG(LogTemp, Warning, TEXT("Item Get!"));
 	//FString Item = _Items[index].name;
+	return _Items[0];
 }
 
 void UPlayerInventoryComponent::AddItems(FItemStruct i)

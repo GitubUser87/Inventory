@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "InventoryCpp/InventoryCppCharacter.h"
 #include "Items.h"
+#include "InventoryCpp/InventoryCppCharacter.h"
 #include "Components/BoxComponent.h"
 
 
