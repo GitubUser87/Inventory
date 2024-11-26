@@ -46,6 +46,8 @@ void UPlayerInventoryComponent::AddItems(FItemStruct i)
 	//tempstruct.itemname = iname;
 	//tempstruct.value = ivalue;
 
+	//current weight
+
 	_Items.Add(i);
 }
 
