@@ -14,7 +14,7 @@ struct FmyInventoryItems
 	GENERATED_BODY()
 	FString itemname;
 	int value;
-
+	float spaceleft;
 };
 
 
@@ -31,7 +31,7 @@ public:
 	TArray<FItemStruct> _Items;
 
 	UFUNCTION(BlueprintCallable)
-	FString GetItems();
+	TArray<FItemStruct> GetItems();
 
 	UFUNCTION(BlueprintCallable)
 	FItemStruct GetAnItem(int32 index);

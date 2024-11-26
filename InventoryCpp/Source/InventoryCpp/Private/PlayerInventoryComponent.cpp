@@ -14,28 +14,29 @@ UPlayerInventoryComponent::UPlayerInventoryComponent()
 	// ...
 }
 
-FString UPlayerInventoryComponent::GetItems()
+TArray<FItemStruct> UPlayerInventoryComponent::GetItems()
 {
-	FString tempstring;
+	//FString tempstruct;
 
-	for (int32 Index = 0; Index != _Items.Num(); ++Index)
-	{
-		tempstring += _Items[Index].name;
-		//tempstring += TEXT(" Value: ");
-		//tempstring.AppendInt(_Items[Index].value);
-		//tempstring += TEXT(" Weight: ");
-		//tempstring.AppendInt( _Items[Index].weight);
-		tempstring += LINE_TERMINATOR;
-		
-	}
-	return tempstring;
+	//for (int32 Index = 0; Index != _Items.Num(); ++Index)
+	//{
+	//	tempstruct += _Items[Index].name;
+	//	tempstruct += TEXT(" Value: ");
+	//	tempstruct.AppendInt(_Items[Index].value);
+	//	//tempstring += TEXT(" Weight: ");
+	//	//tempstring.AppendInt( _Items[Index].weight);
+	//	tempstruct += LINE_TERMINATOR;
+	//	
+	//}
+	//return tempstruct;
+	return _Items;
 }
 
 FItemStruct UPlayerInventoryComponent::GetAnItem(int32 index)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Item Get!"));
+	//UE_LOG(LogTemp, Warning, TEXT("Item Get!"));
 	//FString Item = _Items[index].name;
-	return _Items[0];
+	return _Items[index];
 }
 
 void UPlayerInventoryComponent::AddItems(FItemStruct i)

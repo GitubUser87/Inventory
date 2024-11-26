@@ -38,7 +38,7 @@ void AItems::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* Othe
 		UE_LOG(LogTemp, Warning, TEXT("Overlapped!"));
 		//UE_LOG(LogTemp, Warning, TEXT());
 		tempActor->GetInventory()->AddItems(itemInfo);	
-		//Destroy();
+		Destroy();
 	}
 }
 
