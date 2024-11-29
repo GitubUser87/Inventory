@@ -28,8 +28,8 @@ struct FItemStruct
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	bool weapon;
 
-	/*UPROPERTY(BlueprintReadWrite, EditAnywhere)
-	UStaticMeshComponent*  _mymesh;*/
+	//UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	//UStaticMeshComponent*  _mymesh;
 };
 
 

@@ -14,6 +14,7 @@ struct FmyInventoryItems
 	GENERATED_BODY()
 	FString itemname;
 	int value;
+	float weight;
 	float spaceleft;
 };
 
@@ -41,6 +42,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void ItemSort();
 
+	UFUNCTION(BlueprintCallable)
+	void ItemSort2();
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;

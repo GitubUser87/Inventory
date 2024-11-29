@@ -45,8 +45,8 @@ void UPlayerInventoryComponent::AddItems(FItemStruct i)
 
 	//tempstruct.itemname = iname;
 	//tempstruct.value = ivalue;
-
-	//current weight = current weight + iweight
+	//tempstruct.weight = iweight;
+	//currentweight = currentweight + iweight;
 
 	_Items.Add(i);
 	//_Items.Sort([](FItemStruct e1, FItemStruct e2) {
@@ -77,6 +77,23 @@ void UPlayerInventoryComponent::ItemSort()
 		UE_LOG(LogTemp, Warning, TEXT("%d"), e.value);
 	}
 
+}
+
+void UPlayerInventoryComponent::ItemSort2()
+{
+	order = !order;
+	if (order)
+	{
+		_Items.Sort([](FItemStruct e1, FItemStruct e2) {
+			return e1.weight < e2.weight;
+			});
+	}
+	else
+	{
+		_Items.Sort([](FItemStruct e1, FItemStruct e2) {
+			return e1.weight > e2.weight;
+			});
+	}
 }
 
 
