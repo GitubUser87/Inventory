@@ -38,9 +38,17 @@ public:
 
 	void AddItems(FItemStruct i);
 
+	UFUNCTION(BlueprintCallable)
+	void ItemSort();
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
+
+	float maxweight = 10;
+	float currentweight;
+
+	bool order = true;
 
 public:	
 	// Called every frame

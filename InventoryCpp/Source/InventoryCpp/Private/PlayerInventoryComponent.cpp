@@ -49,6 +49,34 @@ void UPlayerInventoryComponent::AddItems(FItemStruct i)
 	//current weight = current weight + iweight
 
 	_Items.Add(i);
+	//_Items.Sort([](FItemStruct e1, FItemStruct e2) {
+	//	return e1.value < e2.value;
+	//});
+}
+
+void UPlayerInventoryComponent::ItemSort()
+{
+	order = !order;
+	if (order)
+	{
+		_Items.Sort([](FItemStruct e1, FItemStruct e2) {
+			return e1.value < e2.value;
+			});
+	}
+	else
+	{
+		_Items.Sort([](FItemStruct e1, FItemStruct e2) {
+			return e1.value > e2.value;
+			});
+	}
+
+	//UE_LOG(LogTemp, Warning, TEXT("sorting"));
+
+	for (auto& e: _Items)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("%d"), e.value);
+	}
+
 }
 
 
