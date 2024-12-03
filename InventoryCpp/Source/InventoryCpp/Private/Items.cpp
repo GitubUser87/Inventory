@@ -39,13 +39,18 @@ void AItems::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* Othe
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Overlapped!"));
 
-		//if (itemInfo.newweight == itemInfo.maxweight)
+		//if (itemInfo.newweight >= itemInfo.maxweight)
 		//{
 		//	UE_LOG(LogTemp, Warning, TEXT("Warning Inventory Full!"));
 		//  return;
 		//}
 
 		tempActor->GetInventory()->AddItems(itemInfo);	
+		//if (itemInfo.name == itemInfo.name)
+		//{
+		//	itemInfo.value + 1;
+		//}
+		
 		Destroy();
 	}
 }
