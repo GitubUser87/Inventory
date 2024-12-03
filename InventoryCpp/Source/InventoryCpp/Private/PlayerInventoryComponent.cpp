@@ -39,6 +39,15 @@ FItemStruct UPlayerInventoryComponent::GetAnItem(int32 index)
 	return _Items[index];
 }
 
+void UPlayerInventoryComponent::RemoveItems(int32 index)
+{
+	_Items.RemoveAt(index);
+	for (auto& element : _Items)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("%s %d"), (*element.name), element.value);
+	}
+}
+
 void UPlayerInventoryComponent::AddItems(FItemStruct i)
 {
 	FmyInventoryItems tempstruct;
@@ -95,6 +104,15 @@ void UPlayerInventoryComponent::ItemSort2()
 			});
 	}
 }
+
+//void UPlayerInventoryComponent::updateItemsMaxWeight(float newweight)
+//{
+//	for (auto& item: _Items)
+//	{
+//		newweight =  newweight + item.weight  ;
+//		item.maxweight = newweight;
+//	}
+//}
 
 
 // Called when the game starts

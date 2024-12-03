@@ -22,6 +22,8 @@ AItems::AItems()
 	Box->SetBoxExtent(FVector(74.0f, 125.0f, 100.0f));
 	Box->SetupAttachment(ItemMesh);
 	Box->SetRelativeLocation(FVector(0.0f, 0.0f, 100.0f));
+
+	itemInfo.maxweight = 10;
 }
 
 
@@ -30,16 +32,17 @@ void AItems::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* Othe
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	
-
+	
 	AInventoryCppCharacter* tempActor = (AInventoryCppCharacter*)OtherActor;
 
 	if (IsValid(tempActor)) 
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Overlapped!"));
 
-		//if (currentweight == maxweight)
+		//if (itemInfo.newweight == itemInfo.maxweight)
 		//{
 		//	UE_LOG(LogTemp, Warning, TEXT("Warning Inventory Full!"));
+		//  return;
 		//}
 
 		tempActor->GetInventory()->AddItems(itemInfo);	

@@ -37,6 +37,10 @@ public:
 	UFUNCTION(BlueprintCallable)
 	FItemStruct GetAnItem(int32 index);
 
+	UFUNCTION (BlueprintCallable)
+	void RemoveItems(int32 index);
+
+
 	void AddItems(FItemStruct i);
 
 	UFUNCTION(BlueprintCallable)
@@ -44,6 +48,8 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void ItemSort2();
+
+	//void updateItemsMaxWeight(float newweight);
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;

@@ -28,6 +28,8 @@ struct FItemStruct
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	bool weapon;
 
+	float maxweight;
+
 	//UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	//UStaticMeshComponent*  _mymesh;
 };
@@ -61,6 +63,7 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UBoxComponent* Box;
+
 
 	
 	UFUNCTION()
