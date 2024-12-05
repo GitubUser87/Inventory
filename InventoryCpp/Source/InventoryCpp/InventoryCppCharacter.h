@@ -41,6 +41,7 @@ class AInventoryCppCharacter : public ACharacter
 	UPlayerInventoryComponent* _inventory;
 	
 public:
+	//This will return the inventory to the player so that they can see the contents.
 	AInventoryCppCharacter();
 
 	UFUNCTION(BlueprintCallable)

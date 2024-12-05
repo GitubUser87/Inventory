@@ -14,6 +14,7 @@ UPlayerInventoryComponent::UPlayerInventoryComponent()
 	// ...
 }
 
+//This will get the items that have been stored in the array.
 TArray<FItemStruct> UPlayerInventoryComponent::GetItems()
 {
 	//FString tempstruct;
@@ -32,6 +33,7 @@ TArray<FItemStruct> UPlayerInventoryComponent::GetItems()
 	return _Items;
 }
 
+//This gets an item from the array of items.
 FItemStruct UPlayerInventoryComponent::GetAnItem(int32 index)
 {
 	//UE_LOG(LogTemp, Warning, TEXT("Item Get!"));
@@ -39,6 +41,7 @@ FItemStruct UPlayerInventoryComponent::GetAnItem(int32 index)
 	return _Items[index];
 }
 
+//This will remove the item selected from the inventory upon the button being pressed.
 void UPlayerInventoryComponent::RemoveItems(int32 index)
 {
 	_Items.RemoveAt(index);
@@ -48,6 +51,7 @@ void UPlayerInventoryComponent::RemoveItems(int32 index)
 	}
 }
 
+//This will add the items to the inventory array.
 void UPlayerInventoryComponent::AddItems(FItemStruct i)
 {
 	FmyInventoryItems tempstruct;
@@ -61,8 +65,11 @@ void UPlayerInventoryComponent::AddItems(FItemStruct i)
 	//_Items.Sort([](FItemStruct e1, FItemStruct e2) {
 	//	return e1.value < e2.value;
 	//});
+
+	currentweight += i.weight;
 }
 
+//This will sort the items based off their values.
 void UPlayerInventoryComponent::ItemSort()
 {
 	order = !order;
@@ -88,6 +95,7 @@ void UPlayerInventoryComponent::ItemSort()
 
 }
 
+//This will sort the items based off their weights.
 void UPlayerInventoryComponent::ItemSort2()
 {
 	order = !order;
@@ -105,28 +113,30 @@ void UPlayerInventoryComponent::ItemSort2()
 	}
 }
 
-void UPlayerInventoryComponent::CheckMaxWeight(float newweight, float GetWeight)
+//This will add the items weight to the inventories current weight. If it goes over the max weight then it will not add them. Will also work by not picking up items that would cause it to go over the max weight.
+bool UPlayerInventoryComponent::CheckMaxWeight( float GetWeight)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Begin adding"));
-	for (auto& item: _Items)
+	return currentweight + GetWeight > maxWeight;
+
+	/*for (auto& item: _Items)
 	{
-		newweight = newweight + item.weight;
+		currentweight = currentweight + item.weight;
+		currentweight = currentweight + GetWeight;
 	}
 
-	newweight = newweight + GetWeight;
-
-	if (newweight > maxWeight)
+	if (currentweight > maxWeight)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Full"));
 		Full = true;
 		return;
-	}
+	}*/
 }
 
-
-bool UPlayerInventoryComponent::GetFull()
+//This will tell the player that the inventory is full.
+bool UPlayerInventoryComponent::GetFull(FItemStruct i)
 {
-	return Full;
+	return CheckMaxWeight(i.weight);
 }
 
 // Called when the game starts

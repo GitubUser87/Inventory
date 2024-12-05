@@ -27,7 +27,7 @@ AItems::AItems()
 }
 
 
-
+//Will add the item to the inventory. Won't add the item if it exceeds the max weight.
 void AItems::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
@@ -38,19 +38,24 @@ void AItems::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* Othe
 	if (IsValid(tempActor)) 
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Overlapped!"));
-		tempActor->GetInventory()->CheckMaxWeight(0, GetWeight());
-		
-		if (tempActor->GetInventory()->GetFull() == true)
+		if (tempActor->GetInventory()->CheckMaxWeight( GetWeight()))
+		{
+
+			UE_LOG(LogTemp, Warning, TEXT("Warning Inventory Full!"));
+		} else
 		{	
-		  UE_LOG(LogTemp, Warning, TEXT("Warning Inventory Full!"));
-		  return;
+			tempActor->GetInventory()->AddItems(itemInfo);
+			Destroy();
 		}
 
-		tempActor->GetInventory()->AddItems(itemInfo);	
-		Destroy();
+		return;
+
+		
 	}
 }
 
+
+//Gets the items weight for reference.
 float AItems::GetWeight()
 {
 	return itemInfo.weight;
