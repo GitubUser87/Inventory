@@ -124,6 +124,47 @@ UScriptStruct* Z_Construct_UScriptStruct_FItemStruct()
 }
 // End ScriptStruct FItemStruct
 
+// Begin Class AItems Function GetWeight
+struct Z_Construct_UFunction_AItems_GetWeight_Statics
+{
+	struct Items_eventGetWeight_Parms
+	{
+		float ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Items.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AItems_GetWeight_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(Items_eventGetWeight_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AItems_GetWeight_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AItems_GetWeight_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AItems_GetWeight_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AItems_GetWeight_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AItems, nullptr, "GetWeight", nullptr, nullptr, Z_Construct_UFunction_AItems_GetWeight_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AItems_GetWeight_Statics::PropPointers), sizeof(Z_Construct_UFunction_AItems_GetWeight_Statics::Items_eventGetWeight_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AItems_GetWeight_Statics::Function_MetaDataParams), Z_Construct_UFunction_AItems_GetWeight_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_AItems_GetWeight_Statics::Items_eventGetWeight_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AItems_GetWeight()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AItems_GetWeight_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AItems::execGetWeight)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(float*)Z_Param__Result=P_THIS->GetWeight();
+	P_NATIVE_END;
+}
+// End Class AItems Function GetWeight
+
 // Begin Class AItems Function OverlapBegin
 struct Z_Construct_UFunction_AItems_OverlapBegin_Statics
 {
@@ -273,6 +314,7 @@ void AItems::StaticRegisterNativesAItems()
 {
 	UClass* Class = AItems::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "GetWeight", &AItems::execGetWeight },
 		{ "OverlapBegin", &AItems::execOverlapBegin },
 		{ "OverlapEnd", &AItems::execOverlapEnd },
 	};
@@ -313,6 +355,7 @@ struct Z_Construct_UClass_AItems_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_AItems_GetWeight, "GetWeight" }, // 2975240390
 		{ &Z_Construct_UFunction_AItems_OverlapBegin, "OverlapBegin" }, // 3146086563
 		{ &Z_Construct_UFunction_AItems_OverlapEnd, "OverlapEnd" }, // 1469545234
 	};
@@ -374,10 +417,10 @@ struct Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_Inventory
 		{ FItemStruct::StaticStruct, Z_Construct_UScriptStruct_FItemStruct_Statics::NewStructOps, TEXT("ItemStruct"), &Z_Registration_Info_UScriptStruct_ItemStruct, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FItemStruct), 1864437426U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AItems, AItems::StaticClass, TEXT("AItems"), &Z_Registration_Info_UClass_AItems, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AItems), 2326653143U) },
+		{ Z_Construct_UClass_AItems, AItems::StaticClass, TEXT("AItems"), &Z_Registration_Info_UClass_AItems, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AItems), 2261669896U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_2306544255(TEXT("/Script/InventoryCpp"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_519423612(TEXT("/Script/InventoryCpp"),
 	Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_D3303414_Source_repos_Inventory_InventoryCpp_Source_InventoryCpp_Public_Items_h_Statics::ScriptStructInfo),
 	nullptr, 0);

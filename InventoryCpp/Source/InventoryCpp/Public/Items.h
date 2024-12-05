@@ -28,8 +28,6 @@ struct FItemStruct
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	bool weapon;
 
-	float maxweight;
-
 	//UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	//UStaticMeshComponent*  _mymesh;
 };
@@ -64,8 +62,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UBoxComponent* Box;
 
+	UFUNCTION()
+	float GetWeight();
 
-	
 	UFUNCTION()
 	void OverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 

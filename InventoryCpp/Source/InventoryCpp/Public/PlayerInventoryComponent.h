@@ -40,6 +40,7 @@ public:
 	UFUNCTION (BlueprintCallable)
 	void RemoveItems(int32 index);
 
+	float maxWeight = 10;
 
 	void AddItems(FItemStruct i);
 
@@ -49,13 +50,18 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void ItemSort2();
 
-	//void updateItemsMaxWeight(float newweight);
+	void CheckMaxWeight(float newweight, float GetWeight);
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	bool Full = false;
+
+	UFUNCTION(BlueprintCallable)
+	bool GetFull();
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-	float maxweight = 10;
-	float currentweight;
 
 	bool order = true;
 

@@ -105,15 +105,29 @@ void UPlayerInventoryComponent::ItemSort2()
 	}
 }
 
-//void UPlayerInventoryComponent::updateItemsMaxWeight(float newweight)
-//{
-//	for (auto& item: _Items)
-//	{
-//		newweight =  newweight + item.weight  ;
-//		item.maxweight = newweight;
-//	}
-//}
+void UPlayerInventoryComponent::CheckMaxWeight(float newweight, float GetWeight)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Begin adding"));
+	for (auto& item: _Items)
+	{
+		newweight = newweight + item.weight;
+	}
 
+	newweight = newweight + GetWeight;
+
+	if (newweight > maxWeight)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Full"));
+		Full = true;
+		return;
+	}
+}
+
+
+bool UPlayerInventoryComponent::GetFull()
+{
+	return Full;
+}
 
 // Called when the game starts
 void UPlayerInventoryComponent::BeginPlay()
