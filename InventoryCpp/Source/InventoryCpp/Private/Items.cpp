@@ -41,15 +41,12 @@ void AItems::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* Othe
 		tempActor->GetInventory()->CheckMaxWeight(0, GetWeight());
 		
 		if (tempActor->GetInventory()->GetFull() == true)
-		{
+		{	
 		  UE_LOG(LogTemp, Warning, TEXT("Warning Inventory Full!"));
 		  return;
 		}
 
-		//UE_LOG(LogTemp, Warning, TEXT(itemInfo.maxweight));
-
 		tempActor->GetInventory()->AddItems(itemInfo);	
-
 		Destroy();
 	}
 }

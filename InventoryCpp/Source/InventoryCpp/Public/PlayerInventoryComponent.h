@@ -53,7 +53,7 @@ public:
 	void CheckMaxWeight(float newweight, float GetWeight);
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
-	bool Full = false;
+	bool Full;
 
 	UFUNCTION(BlueprintCallable)
 	bool GetFull();
