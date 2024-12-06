@@ -45,6 +45,7 @@ FItemStruct UPlayerInventoryComponent::GetAnItem(int32 index)
 void UPlayerInventoryComponent::RemoveItems(int32 index)
 {
 	_Items.RemoveAt(index);
+	UE_LOG(LogTemp, Warning, TEXT("REMOVE ITEMS"));
 	for (auto& element : _Items)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("%s %d"), (*element.name), element.value);
