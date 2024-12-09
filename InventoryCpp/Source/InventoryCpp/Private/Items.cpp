@@ -38,9 +38,8 @@ void AItems::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* Othe
 	if (IsValid(tempActor)) 
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Overlapped!"));
-		if (tempActor->GetInventory()->CheckMaxWeight( GetWeight()))
+		if (tempActor->GetInventory()->CheckMaxWeight(GetWeight()))
 		{
-
 			UE_LOG(LogTemp, Warning, TEXT("Warning Inventory Full!"));
 		} else
 		{	

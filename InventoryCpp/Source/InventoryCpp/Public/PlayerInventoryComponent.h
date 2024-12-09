@@ -52,6 +52,8 @@ public:
 
 	bool CheckMaxWeight(float GetWeight);
 
+	void RemoveWeight(FItemStruct i);
+
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	bool Full;
 

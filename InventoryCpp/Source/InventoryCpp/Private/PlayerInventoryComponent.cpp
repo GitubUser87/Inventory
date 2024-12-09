@@ -45,11 +45,14 @@ FItemStruct UPlayerInventoryComponent::GetAnItem(int32 index)
 void UPlayerInventoryComponent::RemoveItems(int32 index)
 {
 	_Items.RemoveAt(index);
+
 	UE_LOG(LogTemp, Warning, TEXT("REMOVE ITEMS"));
 	for (auto& element : _Items)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("%s %d"), (*element.name), element.value);
+		UE_LOG(LogTemp, Warning, TEXT("%f"), currentweight);
 	}
+	//RemoveWeight();
 }
 
 //This will add the items to the inventory array.
@@ -68,7 +71,10 @@ void UPlayerInventoryComponent::AddItems(FItemStruct i)
 	//});
 
 	currentweight += i.weight;
+
+	
 }
+
 
 //This will sort the items based off their values.
 void UPlayerInventoryComponent::ItemSort()
@@ -115,24 +121,34 @@ void UPlayerInventoryComponent::ItemSort2()
 }
 
 //This will add the items weight to the inventories current weight. If it goes over the max weight then it will not add them. Will also work by not picking up items that would cause it to go over the max weight.
-bool UPlayerInventoryComponent::CheckMaxWeight( float GetWeight)
+bool UPlayerInventoryComponent::CheckMaxWeight(float GetWeight)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Begin adding"));
 	return currentweight + GetWeight > maxWeight;
 
-	/*for (auto& item: _Items)
-	{
-		currentweight = currentweight + item.weight;
-		currentweight = currentweight + GetWeight;
-	}
+	//for (auto& item: _Items)
+	//{
+	//	currentweight = currentweight + item.weight;
+	//	currentweight = currentweight + GetWeight;
+	//}
 
-	if (currentweight > maxWeight)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Full"));
-		Full = true;
-		return;
-	}*/
+	//if (currentweight > maxWeight)
+	//{
+	//	UE_LOG(LogTemp, Warning, TEXT("Full"));
+	//	Full = true;
+	//	return;
+	//}
 }
+
+
+//This should begin to remove the weight of the items from the current weight.
+void UPlayerInventoryComponent::RemoveWeight(FItemStruct i)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Removing weight"));
+	currentweight -= i.weight;
+}
+
+
 
 //This will tell the player that the inventory is full.
 bool UPlayerInventoryComponent::GetFull(FItemStruct i)
