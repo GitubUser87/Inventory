@@ -23,13 +23,18 @@ struct FItemStruct
 	float weight;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	float HealthRestore;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	bool consumable;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	bool weapon;
 
-	//UPROPERTY(BlueprintReadWrite, EditAnywhere)
-	//UStaticMeshComponent*  _mymesh;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UStaticMesh*  _mymesh;
+
+
 };
 
 

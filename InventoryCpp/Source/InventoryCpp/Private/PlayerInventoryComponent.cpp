@@ -44,6 +44,7 @@ FItemStruct UPlayerInventoryComponent::GetAnItem(int32 index)
 //This will remove the item selected from the inventory upon the button being pressed.
 void UPlayerInventoryComponent::RemoveItems(int32 index)
 {
+	RemoveWeight(_Items[index]);
 	_Items.RemoveAt(index);
 
 	UE_LOG(LogTemp, Warning, TEXT("REMOVE ITEMS"));
@@ -52,7 +53,6 @@ void UPlayerInventoryComponent::RemoveItems(int32 index)
 		UE_LOG(LogTemp, Warning, TEXT("%s %d"), (*element.name), element.value);
 		UE_LOG(LogTemp, Warning, TEXT("%f"), currentweight);
 	}
-	//RemoveWeight();
 }
 
 //This will add the items to the inventory array.
