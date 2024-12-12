@@ -38,6 +38,7 @@ class AInventoryCppCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	UInputAction* MoveAction;
 
+	//This will set a reference to the inventory component with in the players C++ file.
 	UPlayerInventoryComponent* _inventory;
 	
 public:

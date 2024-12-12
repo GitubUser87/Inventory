@@ -7,7 +7,7 @@
 #include "Items.generated.h"
 
 class UBoxComponent;
-
+//This Struct contains all the information that the item should possess.
 USTRUCT(Blueprintable, BlueprintType)
 struct FItemStruct
 {
@@ -33,8 +33,6 @@ struct FItemStruct
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	UStaticMesh*  _mymesh;
-
-
 };
 
 
@@ -55,7 +53,8 @@ public:
 	UStaticMeshComponent* ItemMesh;
 
 	UFUNCTION()
-	void OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	void OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, 
+		int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
 	
 protected:

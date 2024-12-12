@@ -51,6 +51,10 @@ void AItems::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* Othe
 
 		
 	}
+	else 
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Not the player!"));
+	}
 }
 
 

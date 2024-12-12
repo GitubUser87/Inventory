@@ -17,29 +17,30 @@ UPlayerInventoryComponent::UPlayerInventoryComponent()
 //This will get the items that have been stored in the array.
 TArray<FItemStruct> UPlayerInventoryComponent::GetItems()
 {
-	//FString tempstruct;
 
-	//for (int32 Index = 0; Index != _Items.Num(); ++Index)
-	//{
-	//	tempstruct += _Items[Index].name;
-	//	tempstruct += TEXT(" Value: ");
-	//	tempstruct.AppendInt(_Items[Index].value);
-	//	//tempstring += TEXT(" Weight: ");
-	//	//tempstring.AppendInt( _Items[Index].weight);
-	//	tempstruct += LINE_TERMINATOR;
-	//	
-	//}
-	//return tempstruct;
 	return _Items;
 }
+//FString tempstruct;
+
+//for (int32 Index = 0; Index != _Items.Num(); ++Index)
+//{
+//	tempstruct += _Items[Index].name;
+//	tempstruct += TEXT(" Value: ");
+//	tempstruct.AppendInt(_Items[Index].value);
+//	//tempstring += TEXT(" Weight: ");
+//	//tempstring.AppendInt( _Items[Index].weight);
+//	tempstruct += LINE_TERMINATOR;
+//	
+//}
+//return tempstruct;
 
 //This gets an item from the array of items.
 FItemStruct UPlayerInventoryComponent::GetAnItem(int32 index)
 {
-	//UE_LOG(LogTemp, Warning, TEXT("Item Get!"));
-	//FString Item = _Items[index].name;
 	return _Items[index];
 }
+//UE_LOG(LogTemp, Warning, TEXT("Item Get!"));
+//FString Item = _Items[index].name;
 
 //This will remove the item selected from the inventory upon the button being pressed.
 void UPlayerInventoryComponent::RemoveItems(int32 index)
@@ -59,21 +60,18 @@ void UPlayerInventoryComponent::RemoveItems(int32 index)
 void UPlayerInventoryComponent::AddItems(FItemStruct i)
 {
 	FmyInventoryItems tempstruct;
-
-	//tempstruct.itemname = iname;
-	//tempstruct.value = ivalue;
-	//tempstruct.weight = iweight;
-	//currentweight = currentweight + iweight;
-
 	_Items.Add(i);
-	//_Items.Sort([](FItemStruct e1, FItemStruct e2) {
-	//	return e1.value < e2.value;
-	//});
-
 	currentweight += i.weight;
-
-	
 }
+
+//tempstruct.itemname = iname;
+//tempstruct.value = ivalue;
+//tempstruct.weight = iweight;
+//currentweight = currentweight + iweight;
+
+//_Items.Sort([](FItemStruct e1, FItemStruct e2) {
+//	return e1.value < e2.value;
+//});
 
 
 //This will sort the items based off their values.
@@ -92,8 +90,6 @@ void UPlayerInventoryComponent::ItemSort()
 			return e1.value > e2.value;
 			});
 	}
-
-	//UE_LOG(LogTemp, Warning, TEXT("sorting"));
 
 	for (auto& e: _Items)
 	{
@@ -126,20 +122,20 @@ bool UPlayerInventoryComponent::CheckMaxWeight(float GetWeight)
 	UE_LOG(LogTemp, Warning, TEXT("Begin adding"));
 	return currentweight + GetWeight > maxWeight;
 
-	//for (auto& item: _Items)
-	//{
-	//	currentweight = currentweight + item.weight;
-	//	currentweight = currentweight + GetWeight;
-	//}
-
-	//if (currentweight > maxWeight)
-	//{
-	//	UE_LOG(LogTemp, Warning, TEXT("Full"));
-	//	Full = true;
-	//	return;
-	//}
 }
 
+//for (auto& item: _Items)
+//{
+//	currentweight = currentweight + item.weight;
+//	currentweight = currentweight + GetWeight;
+//}
+
+//if (currentweight > maxWeight)
+//{
+//	UE_LOG(LogTemp, Warning, TEXT("Full"));
+//	Full = true;
+//	return;
+//}
 
 //This should begin to remove the weight of the items from the current weight.
 void UPlayerInventoryComponent::RemoveWeight(FItemStruct i)
