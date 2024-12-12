@@ -29,7 +29,8 @@ public:
 	// Sets default values for this component's properties
 	UPlayerInventoryComponent();
 
-	TArray<FItemStruct> _Items;
+	UPROPERTY()
+	TArray<FItemStruct> _Items = {};
 
 	UFUNCTION(BlueprintCallable)
 	TArray<FItemStruct> GetItems();
@@ -39,8 +40,6 @@ public:
 
 	UFUNCTION (BlueprintCallable)
 	void RemoveItems(int32 index);
-
-	float maxWeight = 50;
 
 	void AddItems(FItemStruct i);
 
@@ -60,7 +59,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	bool GetFull(FItemStruct i);
 
-	float currentweight;
+	float currentweight =0;
+	float maxWeight = 50;
 
 protected:
 	// Called when the game starts

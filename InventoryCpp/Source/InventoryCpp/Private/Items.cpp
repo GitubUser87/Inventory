@@ -33,9 +33,9 @@ void AItems::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* Othe
 {
 	
 	
-	AInventoryCppCharacter* tempActor = (AInventoryCppCharacter*)OtherActor;
+	AInventoryCppCharacter* tempActor = Cast<AInventoryCppCharacter>(OtherActor);
 
-	if (IsValid(tempActor)) 
+	if (IsValid(tempActor))
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Overlapped!"));
 		if (tempActor->GetInventory()->CheckMaxWeight(GetWeight()))
