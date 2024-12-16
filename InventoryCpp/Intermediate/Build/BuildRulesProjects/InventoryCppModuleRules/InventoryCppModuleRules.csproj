@@ -15,6 +15,7 @@
     <ProjectReference Include="..\..\..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.4\Engine\Source\Programs\UnrealBuildTool\UnrealBuildTool.csproj"><Private>false</Private></ProjectReference>
   </ItemGroup>
   <ItemGroup>
+  <Compile Include="..\..\..\..\Plugins\Inventory\Source\Inventory\Inventory.Build.cs"><Link>Plugins\Inventory\Source\Inventory\Inventory.Build.cs</Link></Compile>
   <Compile Include="..\..\..\..\Source\InventoryCpp.Target.cs"><Link>Source\InventoryCpp.Target.cs</Link></Compile>
   <Compile Include="..\..\..\..\Source\InventoryCppEditor.Target.cs"><Link>Source\InventoryCppEditor.Target.cs</Link></Compile>
   <Compile Include="..\..\..\..\Source\InventoryCpp\InventoryCpp.Build.cs"><Link>Source\InventoryCpp\InventoryCpp.Build.cs</Link></Compile>

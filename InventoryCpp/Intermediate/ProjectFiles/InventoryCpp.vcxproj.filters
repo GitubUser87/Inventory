@@ -30,6 +30,48 @@
     <None Include="..\..\Config\DefaultInput.ini">
       <Filter>Config</Filter>
     </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{BB38096A-B391-30DC-A0D4-4F3EA6B44507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\Inventory">
+      <UniqueIdentifier>{B32F4D9A-B249-32AC-B0D9-C4AF5957AD7B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\Inventory\Source">
+      <UniqueIdentifier>{F0827E7D-8B98-3E76-8D0D-15D0B0A50A2A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\Inventory\Source\Inventory">
+      <UniqueIdentifier>{52AC492C-31B6-329D-940C-C42451FF0503}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\Inventory\Source\Inventory\Inventory.Build.cs">
+      <Filter>Plugins\Inventory\Source\Inventory</Filter>
+    </None>
+    <Filter Include="Plugins\Inventory\Source\Inventory\Private">
+      <UniqueIdentifier>{AF7388B2-F2EA-33F7-AFB9-8336C6EB5F8E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\Inventory\Source\Inventory\Private\Inventory.cpp">
+      <Filter>Plugins\Inventory\Source\Inventory\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Inventory\Source\Inventory\Private\MyItem.cpp">
+      <Filter>Plugins\Inventory\Source\Inventory\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\Inventory\Source\Inventory\Public">
+      <UniqueIdentifier>{18D72972-836F-32FE-AFA3-E1175457F503}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\Inventory\Source\Inventory\Public\Inventory.h">
+      <Filter>Plugins\Inventory\Source\Inventory\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\Inventory\Source\Inventory\Public\MyItem.h">
+      <Filter>Plugins\Inventory\Source\Inventory\Public</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\Inventory\Inventory.uplugin">
+      <Filter>Plugins\Inventory</Filter>
+    </None>
+    <Filter Include="Plugins\Inventory\Resources">
+      <UniqueIdentifier>{FF9AAFB5-C24C-3B72-A5A1-EF087DFF3028}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\Inventory\Resources\Icon128.png">
+      <Filter>Plugins\Inventory\Resources</Filter>
+    </None>
     <Filter Include="Source\InventoryCpp">
       <UniqueIdentifier>{207EEDD1-032C-37A5-B882-397ACE88719C}</UniqueIdentifier>
     </Filter>
