@@ -26,19 +26,20 @@ void AMyItem::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* Oth
 
 	if (IsValid(tempActor))
 	{
+
 		UE_LOG(LogTemp, Warning, TEXT("Overlapped!"));
-		if (tempActor->GetInventory()->CheckMaxWeight(GetWeight()))
+		if (tempActor->GetInventory2()->CheckMaxWeight2(GetWeight()))
 		{
 			UE_LOG(LogTemp, Warning, TEXT("Warning Inventory Full!"));
 		}
 		else
 		{
-			tempActor->GetInventory()->AddItems(itemInfo2);
+			tempActor->GetInventory2()->AddItems2(itemInfo2);
 			Destroy();
 		}
 
 		return;
-
+		
 
 	}
 	else
@@ -50,6 +51,7 @@ void AMyItem::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* Oth
 
 float AMyItem::GetWeight()
 {
+	UE_LOG(LogTemp, Warning, TEXT("We are here"));
 	return itemInfo2.weight;
 }
 void AMyItem::OverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)

@@ -14,91 +14,93 @@ UMyInventoryComponent::UMyInventoryComponent()
 }
 
 
-TArray<FItemStruct2> UMyInventoryComponent::GetItems()
+TArray<FItemStruct2> UMyInventoryComponent::GetItems2()
 {
 
-	return _Items;
+	return _Items2;
 }
 
-FItemStruct2 UMyInventoryComponent::GetAnItem(int32 index)
+FItemStruct2 UMyInventoryComponent::GetAnItem2(int32 index)
 {
-	return _Items[index];
+	return _Items2[index];
 }
 
-void UMyInventoryComponent::RemoveItems(int32 index)
+void UMyInventoryComponent::RemoveItems2(int32 index)
 {
-	RemoveWeight(_Items[index]);
-	_Items.RemoveAt(index);
+	RemoveWeight2(_Items2[index]);
+	_Items2.RemoveAt(index);
 
 	UE_LOG(LogTemp, Warning, TEXT("REMOVE ITEMS"));
-	for (auto& element : _Items)
+	for (auto& element : _Items2)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("%s %d"), (*element.name), element.value);
 		UE_LOG(LogTemp, Warning, TEXT("%f"), currentweight);
 	}
 }
 
-void UMyInventoryComponent::AddItems(FItemStruct2 i)
+void UMyInventoryComponent::AddItems2(FItemStruct2 i)
 {
 	FmyInventoryItems2 tempstruct;
-	_Items.Add(i);
+	_Items2.Add(i);
 	currentweight += i.weight;
 }
 
-void UMyInventoryComponent::ItemSort()
+void UMyInventoryComponent::ItemSort3()
 {
+	UE_LOG(LogTemp, Warning, TEXT("Sorting"));
 	order = !order;
 	if (order)
 	{
-		_Items.Sort([](FItemStruct2 e1, FItemStruct2 e2) {
+		_Items2.Sort([](FItemStruct2 e1, FItemStruct2 e2) {
 			return e1.value < e2.value;
 			});
 	}
 	else
 	{
-		_Items.Sort([](FItemStruct2 e1, FItemStruct2 e2) {
+		_Items2.Sort([](FItemStruct2 e1, FItemStruct2 e2) {
 			return e1.value > e2.value;
 			});
 	}
 
-	for (auto& e : _Items)
+	for (auto& e : _Items2)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("%d"), e.value);
 	}
 }
 
-void UMyInventoryComponent::ItemSort2()
+void UMyInventoryComponent::ItemSort4()
 {
 	order = !order;
 	if (order)
 	{
-		_Items.Sort([](FItemStruct2 e1, FItemStruct2 e2) {
+		_Items2.Sort([](FItemStruct2 e1, FItemStruct2 e2) {
 			return e1.weight < e2.weight;
 			});
 	}
 	else
 	{
-		_Items.Sort([](FItemStruct2 e1, FItemStruct2 e2) {
+		_Items2.Sort([](FItemStruct2 e1, FItemStruct2 e2) {
 			return e1.weight > e2.weight;
 			});
 	}
 }
 
-bool UMyInventoryComponent::CheckMaxWeight(float GetWeight)
+bool UMyInventoryComponent::CheckMaxWeight2(float GetWeight2)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Begin adding"));
-	return currentweight + GetWeight > maxWeight;
+	return currentweight + GetWeight2 > maxWeight;
+
 }
 
-void UMyInventoryComponent::RemoveWeight(FItemStruct2 i)
+void UMyInventoryComponent::RemoveWeight2(FItemStruct2 i)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Removing weight"));
 	currentweight -= i.weight;
 }
 
-bool UMyInventoryComponent::GetFull(FItemStruct2 i)
+bool UMyInventoryComponent::GetFull2(FItemStruct2 i)
 {
-	return CheckMaxWeight(i.weight);
+	return CheckMaxWeight2(i.weight);
 }
 
 // Called when the game starts

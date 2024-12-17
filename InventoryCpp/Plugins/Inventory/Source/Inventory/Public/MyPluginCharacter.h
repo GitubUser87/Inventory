@@ -21,7 +21,7 @@ public:
 	AMyPluginCharacter();
 
 	UFUNCTION(BlueprintCallable, Category = something)
-	UMyInventoryComponent* GetInventory() { return _myinventory; };
+	UMyInventoryComponent* GetInventory2() { return _myinventory; };
 
 
 
@@ -35,5 +35,7 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+protected:
 
 };
