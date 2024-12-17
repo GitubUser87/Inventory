@@ -47,6 +47,15 @@ void AMyItem::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* Oth
 	}
 }
 
+
+float AMyItem::GetWeight()
+{
+	return itemInfo2.weight;
+}
+void AMyItem::OverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+
+}
 // Called when the game starts or when spawned
 void AMyItem::BeginPlay()
 {
@@ -54,10 +63,7 @@ void AMyItem::BeginPlay()
 	
 }
 
-float AMyItem::GetWeight()
-{
-	return itemInfo2.weight;
-}
+
 
 // Called every frame
 void AMyItem::Tick(float DeltaTime)
