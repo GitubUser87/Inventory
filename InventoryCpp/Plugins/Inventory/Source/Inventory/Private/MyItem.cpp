@@ -2,7 +2,7 @@
 
 
 #include "MyItem.h"
-
+#include "MyPluginCharacter.h"
 #include "Components/BoxComponent.h"
 
 // Sets default values
@@ -11,40 +11,40 @@ AMyItem::AMyItem()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	//ItemMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Root"));
-	//RootComponent = ItemMesh;
+	ItemMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Root"));
+	RootComponent = ItemMesh;
 
-	//Box = CreateDefaultSubobject<UBoxComponent>(FName("Box"));
-	//Box->SetBoxExtent(FVector(74.0f, 125.0f, 100.0f));
-	//Box->SetupAttachment(ItemMesh);
-	//Box->SetRelativeLocation(FVector(0.0f, 0.0f, 100.0f));
+	Box = CreateDefaultSubobject<UBoxComponent>(FName("Box"));
+	Box->SetBoxExtent(FVector(74.0f, 125.0f, 100.0f));
+	Box->SetupAttachment(ItemMesh);
+	Box->SetRelativeLocation(FVector(0.0f, 0.0f, 100.0f));
 }
 
 void AMyItem::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	//AInventoryCppCharacter* tempActor = Cast<AInventoryCppCharacter>(OtherActor);
+	AMyPluginCharacter* tempActor = Cast<AMyPluginCharacter>(OtherActor);
 
-	//if (IsValid(tempActor))
-	//{
-	//	UE_LOG(LogTemp, Warning, TEXT("Overlapped!"));
-	//	if (tempActor->GetInventory()->CheckMaxWeight(GetWeight()))
-	//	{
-	//		UE_LOG(LogTemp, Warning, TEXT("Warning Inventory Full!"));
-	//	}
-	//	else
-	//	{
-	//		tempActor->GetInventory()->AddItems(itemInfo);
-	//		Destroy();
-	//	}
+	if (IsValid(tempActor))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Overlapped!"));
+		if (tempActor->GetInventory()->CheckMaxWeight(GetWeight()))
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Warning Inventory Full!"));
+		}
+		else
+		{
+			tempActor->GetInventory()->AddItems(itemInfo2);
+			Destroy();
+		}
 
-	//	return;
+		return;
 
 
-	//}
-	//else
-	//{
-	//	UE_LOG(LogTemp, Warning, TEXT("Not the player!"));
-	//}
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Not the player!"));
+	}
 }
 
 // Called when the game starts or when spawned

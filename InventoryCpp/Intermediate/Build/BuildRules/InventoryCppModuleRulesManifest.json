@@ -1,9 +1,0 @@
-{
-	"SourceFiles": [
-		"C:\\Users\\D3303414\\Source\\repos\\Inventory\\InventoryCpp\\Source\\InventoryCpp\\InventoryCpp.Build.cs",
-		"C:\\Users\\D3303414\\Source\\repos\\Inventory\\InventoryCpp\\Plugins\\Inventory\\Source\\Inventory\\Inventory.Build.cs",
-		"C:\\Users\\D3303414\\Source\\repos\\Inventory\\InventoryCpp\\Source\\InventoryCpp.Target.cs",
-		"C:\\Users\\D3303414\\Source\\repos\\Inventory\\InventoryCpp\\Source\\InventoryCppEditor.Target.cs"
-	],
-	"EngineVersion": "5.4.4"
-}

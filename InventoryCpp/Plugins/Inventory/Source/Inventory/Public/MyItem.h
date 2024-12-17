@@ -58,8 +58,8 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = something)
-	//UBoxComponent* Box;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = something)
+	UBoxComponent* Box;
 
 	UFUNCTION()
 	float GetWeight();
