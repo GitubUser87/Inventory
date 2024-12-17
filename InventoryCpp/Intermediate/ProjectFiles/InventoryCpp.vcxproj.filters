@@ -51,7 +51,13 @@
     <ClCompile Include="..\..\Plugins\Inventory\Source\Inventory\Private\Inventory.cpp">
       <Filter>Plugins\Inventory\Source\Inventory\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Plugins\Inventory\Source\Inventory\Private\MyInventoryComponent.cpp">
+      <Filter>Plugins\Inventory\Source\Inventory\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Plugins\Inventory\Source\Inventory\Private\MyItem.cpp">
+      <Filter>Plugins\Inventory\Source\Inventory\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Inventory\Source\Inventory\Private\MyPluginCharacter.cpp">
       <Filter>Plugins\Inventory\Source\Inventory\Private</Filter>
     </ClCompile>
     <Filter Include="Plugins\Inventory\Source\Inventory\Public">
@@ -60,11 +66,23 @@
     <ClInclude Include="..\..\Plugins\Inventory\Source\Inventory\Public\Inventory.h">
       <Filter>Plugins\Inventory\Source\Inventory\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Plugins\Inventory\Source\Inventory\Public\MyInventoryComponent.h">
+      <Filter>Plugins\Inventory\Source\Inventory\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Plugins\Inventory\Source\Inventory\Public\MyItem.h">
+      <Filter>Plugins\Inventory\Source\Inventory\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\Inventory\Source\Inventory\Public\MyPluginCharacter.h">
       <Filter>Plugins\Inventory\Source\Inventory\Public</Filter>
     </ClInclude>
     <None Include="..\..\Plugins\Inventory\Inventory.uplugin">
       <Filter>Plugins\Inventory</Filter>
+    </None>
+    <Filter Include="Plugins\Inventory\Config">
+      <UniqueIdentifier>{0A659F89-CDDA-3D26-8A7B-D454930E836E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\Inventory\Config\FilterPlugin.ini">
+      <Filter>Plugins\Inventory\Config</Filter>
     </None>
     <Filter Include="Plugins\Inventory\Resources">
       <UniqueIdentifier>{FF9AAFB5-C24C-3B72-A5A1-EF087DFF3028}</UniqueIdentifier>

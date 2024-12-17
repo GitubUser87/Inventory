@@ -490,6 +490,27 @@
     <ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.4\Engine\Platforms\VisionOS\Source\Developer\VisionOSTargetPlatform\Private\VisionOSTargetPlatformModule.cpp">
       <Filter>Platforms\VisionOS\Source\Developer\VisionOSTargetPlatform\Private</Filter>
     </ClCompile>
+    <Filter Include="Platforms\VisionOS\Source\Programs">
+      <UniqueIdentifier>{39968CF1-30B4-3F91-8B35-3F621B448E49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms\VisionOS\Source\Programs\UnrealBuildTool">
+      <UniqueIdentifier>{56CDC62D-7EE6-3AB3-8896-8960EB6C4A6F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.4\Engine\Platforms\VisionOS\Source\Programs\UnrealBuildTool\UEBuildVisionOS.cs">
+      <Filter>Platforms\VisionOS\Source\Programs\UnrealBuildTool</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.4\Engine\Platforms\VisionOS\Source\Programs\UnrealBuildTool\UEDeployVisionOS.cs">
+      <Filter>Platforms\VisionOS\Source\Programs\UnrealBuildTool</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.4\Engine\Platforms\VisionOS\Source\Programs\UnrealBuildTool\VisionOSExports.cs">
+      <Filter>Platforms\VisionOS\Source\Programs\UnrealBuildTool</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.4\Engine\Platforms\VisionOS\Source\Programs\UnrealBuildTool\VisionOSProjectGenerator.cs">
+      <Filter>Platforms\VisionOS\Source\Programs\UnrealBuildTool</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.4\Engine\Platforms\VisionOS\Source\Programs\UnrealBuildTool\VisionOSToolChain.cs">
+      <Filter>Platforms\VisionOS\Source\Programs\UnrealBuildTool</Filter>
+    </None>
     <Filter Include="Platforms\VisionOS\Source\Runtime">
       <UniqueIdentifier>{E80A92FC-8FCA-3A1C-BAAD-C61B510B636A}</UniqueIdentifier>
     </Filter>
@@ -586,27 +607,6 @@
     <ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.4\Engine\Platforms\VisionOS\Source\Runtime\VisionOSRuntimeSettings\Private\VisionOSRuntimeSettings.cpp">
       <Filter>Platforms\VisionOS\Source\Runtime\VisionOSRuntimeSettings\Private</Filter>
     </ClCompile>
-    <Filter Include="Platforms\VisionOS\Source\Programs">
-      <UniqueIdentifier>{39968CF1-30B4-3F91-8B35-3F621B448E49}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platforms\VisionOS\Source\Programs\UnrealBuildTool">
-      <UniqueIdentifier>{56CDC62D-7EE6-3AB3-8896-8960EB6C4A6F}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.4\Engine\Platforms\VisionOS\Source\Programs\UnrealBuildTool\UEBuildVisionOS.cs">
-      <Filter>Platforms\VisionOS\Source\Programs\UnrealBuildTool</Filter>
-    </None>
-    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.4\Engine\Platforms\VisionOS\Source\Programs\UnrealBuildTool\UEDeployVisionOS.cs">
-      <Filter>Platforms\VisionOS\Source\Programs\UnrealBuildTool</Filter>
-    </None>
-    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.4\Engine\Platforms\VisionOS\Source\Programs\UnrealBuildTool\VisionOSExports.cs">
-      <Filter>Platforms\VisionOS\Source\Programs\UnrealBuildTool</Filter>
-    </None>
-    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.4\Engine\Platforms\VisionOS\Source\Programs\UnrealBuildTool\VisionOSProjectGenerator.cs">
-      <Filter>Platforms\VisionOS\Source\Programs\UnrealBuildTool</Filter>
-    </None>
-    <None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_5.4\Engine\Platforms\VisionOS\Source\Programs\UnrealBuildTool\VisionOSToolChain.cs">
-      <Filter>Platforms\VisionOS\Source\Programs\UnrealBuildTool</Filter>
-    </None>
     <Filter Include="Shaders">
       <UniqueIdentifier>{ECEE0A84-AF1B-3E31-98AE-C4CE303FAD9D}</UniqueIdentifier>
     </Filter>
