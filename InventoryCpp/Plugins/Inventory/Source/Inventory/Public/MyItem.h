@@ -48,7 +48,7 @@ public:
 	FItemStruct2 itemInfo2;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = something)
-	UStaticMeshComponent* ItemMesh;
+	UStaticMeshComponent* ItemMesh2;
 
 	UFUNCTION()
 	void OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp,

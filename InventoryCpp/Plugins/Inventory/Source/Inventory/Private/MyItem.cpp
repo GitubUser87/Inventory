@@ -11,12 +11,12 @@ AMyItem::AMyItem()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	ItemMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Root"));
-	RootComponent = ItemMesh;
+	//ItemMesh2 = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Root"));
+	//RootComponent == ItemMesh2;
 
 	Box = CreateDefaultSubobject<UBoxComponent>(FName("Box"));
 	Box->SetBoxExtent(FVector(74.0f, 125.0f, 100.0f));
-	Box->SetupAttachment(ItemMesh);
+	//Box->SetupAttachment(ItemMesh2);
 	Box->SetRelativeLocation(FVector(0.0f, 0.0f, 100.0f));
 }
 
