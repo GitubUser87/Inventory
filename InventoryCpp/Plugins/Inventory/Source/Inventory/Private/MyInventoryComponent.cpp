@@ -13,94 +13,96 @@ UMyInventoryComponent::UMyInventoryComponent()
 	// ...
 }
 
-
-TArray<FItemStruct2> UMyInventoryComponent::GetItems2()
+//This will get the items that have been stored in the array.
+TArray<FItemStruct> UMyInventoryComponent::GetItems()
 {
 
-	return _Items2;
+	return _Items;
 }
-
-FItemStruct2 UMyInventoryComponent::GetAnItem2(int32 index)
+//This gets an item from the array of items.
+FItemStruct UMyInventoryComponent::GetAnItem(int32 index)
 {
-	return _Items2[index];
+	return _Items[index];
 }
-
-void UMyInventoryComponent::RemoveItems2(int32 index)
+//This will remove the item selected from the inventory upon the button being pressed.
+void UMyInventoryComponent::RemoveItems(int32 index)
 {
-	RemoveWeight2(_Items2[index]);
-	_Items2.RemoveAt(index);
+	RemoveWeight(_Items[index]);
+	_Items.RemoveAt(index);
 
 	UE_LOG(LogTemp, Warning, TEXT("REMOVE ITEMS"));
-	for (auto& element : _Items2)
+	for (auto& element : _Items)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("%s %d"), (*element.name), element.value);
 		UE_LOG(LogTemp, Warning, TEXT("%f"), currentweight);
 	}
 }
-
-void UMyInventoryComponent::AddItems2(FItemStruct2 i)
+//This will add the items to the inventory array.
+void UMyInventoryComponent::AddItems(FItemStruct i)
 {
-	FmyInventoryItems2 tempstruct;
-	_Items2.Add(i);
+	FmyInventoryItems tempstruct;
+	_Items.Add(i);
 	currentweight += i.weight;
 }
-
-void UMyInventoryComponent::ItemSort3()
+//This will sort the items based off their values.
+void UMyInventoryComponent::ItemSort()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Sorting"));
+	UE_LOG(LogTemp, Warning, TEXT("Sorting Values"));
 	order = !order;
 	if (order)
 	{
-		_Items2.Sort([](FItemStruct2 e1, FItemStruct2 e2) {
+		_Items.Sort([](FItemStruct e1, FItemStruct e2) {
 			return e1.value < e2.value;
 			});
 	}
 	else
 	{
-		_Items2.Sort([](FItemStruct2 e1, FItemStruct2 e2) {
+		_Items.Sort([](FItemStruct e1, FItemStruct e2) {
 			return e1.value > e2.value;
 			});
 	}
 
-	for (auto& e : _Items2)
+	for (auto& e : _Items)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("%d"), e.value);
 	}
 }
-
-void UMyInventoryComponent::ItemSort4()
+//This will sort the items based off their weights.
+void UMyInventoryComponent::ItemSort2()
 {
+	UE_LOG(LogTemp, Warning, TEXT("Sorting Weight"));
 	order = !order;
 	if (order)
 	{
-		_Items2.Sort([](FItemStruct2 e1, FItemStruct2 e2) {
+		_Items.Sort([](FItemStruct e1, FItemStruct e2) {
 			return e1.weight < e2.weight;
 			});
 	}
 	else
 	{
-		_Items2.Sort([](FItemStruct2 e1, FItemStruct2 e2) {
+		_Items.Sort([](FItemStruct e1, FItemStruct e2) {
 			return e1.weight > e2.weight;
 			});
 	}
 }
+//This will add the items weight to the inventories current weight. If it goes over the max weight then it will not add them. Will also work by not picking up items that would cause it to go over the max weight.
 
-bool UMyInventoryComponent::CheckMaxWeight2(float GetWeight2)
+bool UMyInventoryComponent::CheckMaxWeight(float GetWeight)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Begin adding"));
-	return currentweight + GetWeight2 > maxWeight;
+	return currentweight + GetWeight > maxWeight;
 
 }
-
-void UMyInventoryComponent::RemoveWeight2(FItemStruct2 i)
+//This should begin to remove the weight of the items from the current weight.
+void UMyInventoryComponent::RemoveWeight(FItemStruct i)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Removing weight"));
 	currentweight -= i.weight;
 }
-
-bool UMyInventoryComponent::GetFull2(FItemStruct2 i)
+//This will tell the player that the inventory is full.
+bool UMyInventoryComponent::GetFull(FItemStruct i)
 {
-	return CheckMaxWeight2(i.weight);
+	return CheckMaxWeight(i.weight);
 }
 
 // Called when the game starts

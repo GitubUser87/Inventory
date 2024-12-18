@@ -15,7 +15,7 @@ UPlayerInventoryComponent::UPlayerInventoryComponent()
 }
 
 //This will get the items that have been stored in the array.
-TArray<FItemStruct> UPlayerInventoryComponent::GetItems()
+TArray<FItemStruct2> UPlayerInventoryComponent::GetItems()
 {
 
 	return _Items;
@@ -35,7 +35,7 @@ TArray<FItemStruct> UPlayerInventoryComponent::GetItems()
 //return tempstruct;
 
 //This gets an item from the array of items.
-FItemStruct UPlayerInventoryComponent::GetAnItem(int32 index)
+FItemStruct2 UPlayerInventoryComponent::GetAnItem(int32 index)
 {
 	return _Items[index];
 }
@@ -57,9 +57,9 @@ void UPlayerInventoryComponent::RemoveItems(int32 index)
 }
 
 //This will add the items to the inventory array.
-void UPlayerInventoryComponent::AddItems(FItemStruct i)
+void UPlayerInventoryComponent::AddItems(FItemStruct2 i)
 {
-	FmyInventoryItems tempstruct;
+	FmyInventoryItems2 tempstruct;
 	_Items.Add(i);
 	currentweight += i.weight;
 }
@@ -80,13 +80,13 @@ void UPlayerInventoryComponent::ItemSort()
 	order = !order;
 	if (order)
 	{
-		_Items.Sort([](FItemStruct e1, FItemStruct e2) {
+		_Items.Sort([](FItemStruct2 e1, FItemStruct2 e2) {
 			return e1.value < e2.value;
 			});
 	}
 	else
 	{
-		_Items.Sort([](FItemStruct e1, FItemStruct e2) {
+		_Items.Sort([](FItemStruct2 e1, FItemStruct2 e2) {
 			return e1.value > e2.value;
 			});
 	}
@@ -104,13 +104,13 @@ void UPlayerInventoryComponent::ItemSort2()
 	order = !order;
 	if (order)
 	{
-		_Items.Sort([](FItemStruct e1, FItemStruct e2) {
+		_Items.Sort([](FItemStruct2 e1, FItemStruct2 e2) {
 			return e1.weight < e2.weight;
 			});
 	}
 	else
 	{
-		_Items.Sort([](FItemStruct e1, FItemStruct e2) {
+		_Items.Sort([](FItemStruct2 e1, FItemStruct2 e2) {
 			return e1.weight > e2.weight;
 			});
 	}
@@ -138,7 +138,7 @@ bool UPlayerInventoryComponent::CheckMaxWeight(float GetWeight)
 //}
 
 //This should begin to remove the weight of the items from the current weight.
-void UPlayerInventoryComponent::RemoveWeight(FItemStruct i)
+void UPlayerInventoryComponent::RemoveWeight(FItemStruct2 i)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Removing weight"));
 	currentweight -= i.weight;
@@ -147,7 +147,7 @@ void UPlayerInventoryComponent::RemoveWeight(FItemStruct i)
 
 
 //This will tell the player that the inventory is full.
-bool UPlayerInventoryComponent::GetFull(FItemStruct i)
+bool UPlayerInventoryComponent::GetFull(FItemStruct2 i)
 {
 	return CheckMaxWeight(i.weight);
 }

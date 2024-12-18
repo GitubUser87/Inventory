@@ -2,7 +2,8 @@
 
 
 #include "MyItem.h"
-#include "MyPluginCharacter.h"
+//#include "MyPluginCharacter.h"
+#include "Inventory/Public/MyPluginCharacter.h"
 #include "Components/BoxComponent.h"
 
 // Sets default values
@@ -12,7 +13,7 @@ AMyItem::AMyItem()
 	PrimaryActorTick.bCanEverTick = true;
 
 	//ItemMesh2 = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Root"));
-	//RootComponent == ItemMesh2;
+	//RootComponent = ItemMesh2;
 
 	Box = CreateDefaultSubobject<UBoxComponent>(FName("Box"));
 	Box->SetBoxExtent(FVector(74.0f, 125.0f, 100.0f));
@@ -20,21 +21,22 @@ AMyItem::AMyItem()
 	Box->SetRelativeLocation(FVector(0.0f, 0.0f, 100.0f));
 }
 
-void AMyItem::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+//Will add the item to the inventory. Won't add the item if it exceeds the max weight.
+void AMyItem::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, 
+	int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	AMyPluginCharacter* tempActor = Cast<AMyPluginCharacter>(OtherActor);
 
 	if (IsValid(tempActor))
 	{
-
 		UE_LOG(LogTemp, Warning, TEXT("Overlapped!"));
-		if (tempActor->GetInventory2()->CheckMaxWeight2(GetWeight()))
+		if (tempActor->GetInventory()->CheckMaxWeight(GetWeight()))
 		{
 			UE_LOG(LogTemp, Warning, TEXT("Warning Inventory Full!"));
 		}
 		else
 		{
-			tempActor->GetInventory2()->AddItems2(itemInfo2);
+			tempActor->GetInventory()->AddItems(itemInfo);
 			Destroy();
 		}
 
@@ -47,23 +49,25 @@ void AMyItem::OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* Oth
 		UE_LOG(LogTemp, Warning, TEXT("Not the player!"));
 	}
 }
+// Called when the game starts or when spawned
+void AMyItem::BeginPlay()
+{
+	Super::BeginPlay();
 
+	Box->OnComponentBeginOverlap.AddDynamic(this, &AMyItem::OverlapBegin);
+	Box->OnComponentEndOverlap.AddDynamic(this, &AMyItem::OverlapEnd);
 
+}
+//Gets the items weight for reference.
 float AMyItem::GetWeight()
 {
-	UE_LOG(LogTemp, Warning, TEXT("We are here"));
-	return itemInfo2.weight;
+	return itemInfo.weight;
 }
 void AMyItem::OverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 
 }
-// Called when the game starts or when spawned
-void AMyItem::BeginPlay()
-{
-	Super::BeginPlay();
-	
-}
+
 
 
 

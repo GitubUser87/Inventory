@@ -9,7 +9,7 @@
 class UBoxComponent;
 //This Struct contains all the information that the item should possess.
 USTRUCT(Blueprintable, BlueprintType)
-struct FItemStruct2
+struct FItemStruct
 {
 	GENERATED_BODY()
 
@@ -45,10 +45,10 @@ public:
 	AMyItem();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Stats")
-	FItemStruct2 itemInfo2;
+	FItemStruct itemInfo;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = something)
-	UStaticMeshComponent* ItemMesh2;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "something")
+	UStaticMeshComponent* ItemMesh;
 
 	UFUNCTION()
 	void OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp,
@@ -58,7 +58,7 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = something)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "something")
 	UBoxComponent* Box;
 
 	UFUNCTION()

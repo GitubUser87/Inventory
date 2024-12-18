@@ -9,7 +9,7 @@
 class UBoxComponent;
 //This Struct contains all the information that the item should possess.
 USTRUCT(Blueprintable, BlueprintType)
-struct FItemStruct
+struct FItemStruct2
 {
 	GENERATED_BODY()
 
@@ -47,7 +47,7 @@ public:
 	AItems();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,	Category = "Item Stats")
-	FItemStruct itemInfo;
+	FItemStruct2 itemInfo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UStaticMeshComponent* ItemMesh;

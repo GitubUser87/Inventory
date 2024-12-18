@@ -2,7 +2,7 @@
 
 
 #include "MyPluginCharacter.h"
-//#include "Components/CapsuleComponent.h"
+#include "Components/CapsuleComponent.h"
 
 // Sets default values
 AMyPluginCharacter::AMyPluginCharacter()
@@ -10,8 +10,9 @@ AMyPluginCharacter::AMyPluginCharacter()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	//GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
+	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
 
+	//This will get a reference for the inventory.
 	_myinventory = CreateDefaultSubobject<UMyInventoryComponent>(TEXT("Inventory"));
 
 }

@@ -8,7 +8,7 @@
 #include "MyInventoryComponent.generated.h"
 
 USTRUCT()
-struct FmyInventoryItems2
+struct FmyInventoryItems
 {
 	GENERATED_BODY()
 	FString itemname;
@@ -30,34 +30,34 @@ public:
 	UMyInventoryComponent();
 
 	UPROPERTY()
-	TArray<FItemStruct2> _Items2 = {};
+	TArray<FItemStruct> _Items = {};
 
 	UFUNCTION(BlueprintCallable, Category = something)
-	TArray<FItemStruct2> GetItems2();
+	TArray<FItemStruct> GetItems();
 
 	UFUNCTION(BlueprintCallable, Category = something)
-	FItemStruct2 GetAnItem2(int32 index);
+	FItemStruct GetAnItem(int32 index);
 
 	UFUNCTION(BlueprintCallable, Category = something)
-	void RemoveItems2(int32 index);
+	void RemoveItems(int32 index);
 
-	void AddItems2(FItemStruct2 i);
-
-	UFUNCTION(BlueprintCallable, Category = something)
-	void ItemSort3();
+	void AddItems(FItemStruct i);
 
 	UFUNCTION(BlueprintCallable, Category = something)
-	void ItemSort4();
+	void ItemSort();
 
-	bool CheckMaxWeight2(float GetWeight2);
+	UFUNCTION(BlueprintCallable, Category = something)
+	void ItemSort2();
 
-	void RemoveWeight2(FItemStruct2 i);
+	bool CheckMaxWeight(float GetWeight);
+
+	void RemoveWeight(FItemStruct i);
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = something)
 	bool Full;
 
 	UFUNCTION(BlueprintCallable, Category = something)
-	bool GetFull2(FItemStruct2 i);
+	bool GetFull(FItemStruct i);
 
 	float currentweight = 0;
 	float maxWeight = 50;

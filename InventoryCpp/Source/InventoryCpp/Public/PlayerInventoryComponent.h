@@ -9,7 +9,7 @@
 
 
 USTRUCT()
-struct FmyInventoryItems
+struct FmyInventoryItems2
 {
 	GENERATED_BODY()
 	FString itemname;
@@ -30,18 +30,18 @@ public:
 	UPlayerInventoryComponent();
 
 	UPROPERTY()
-	TArray<FItemStruct> _Items = {};
+	TArray<FItemStruct2> _Items = {};
 
 	UFUNCTION(BlueprintCallable)
-	TArray<FItemStruct> GetItems();
+	TArray<FItemStruct2> GetItems();
 
 	UFUNCTION(BlueprintCallable)
-	FItemStruct GetAnItem(int32 index);
+	FItemStruct2 GetAnItem(int32 index);
 
 	UFUNCTION (BlueprintCallable)
 	void RemoveItems(int32 index);
 
-	void AddItems(FItemStruct i);
+	void AddItems(FItemStruct2 i);
 
 	UFUNCTION(BlueprintCallable)
 	void ItemSort();
@@ -51,13 +51,13 @@ public:
 
 	bool CheckMaxWeight(float GetWeight);
 
-	void RemoveWeight(FItemStruct i);
+	void RemoveWeight(FItemStruct2 i);
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	bool Full;
 
 	UFUNCTION(BlueprintCallable)
-	bool GetFull(FItemStruct i);
+	bool GetFull(FItemStruct2 i);
 
 	float currentweight =0;
 	float maxWeight = 50;
