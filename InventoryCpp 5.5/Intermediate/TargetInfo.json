@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "InventoryCpp",
+			"Path": "..\\Source\\InventoryCpp.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "InventoryCppEditor",
+			"Path": "..\\Source\\InventoryCppEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
