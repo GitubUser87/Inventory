@@ -1,11 +1,13 @@
-"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Module.Inventory.cpp"
-/FI"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp\Intermediate\Build\Win64\x64\InventoryCppEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/FI"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Definitions.Inventory.h"
-/Yu"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp\Intermediate\Build\Win64\x64\InventoryCppEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/Fp"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp\Intermediate\Build\Win64\x64\InventoryCppEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
-/Fo"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Module.Inventory.cpp.obj"
-/sourceDependencies "C:\Users\D3303414\Source\repos\Inventory\InventoryCpp\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Module.Inventory.cpp.dep.json"
-@"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Inventory.Shared.rsp"
+"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Module.Inventory.cpp"
+/FI"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Intermediate\Build\Win64\x64\InventoryCppEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_4.h"
+/FI"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Definitions.Inventory.h"
+/Yu"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Intermediate\Build\Win64\x64\InventoryCppEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_4.h"
+/Fp"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Intermediate\Build\Win64\x64\InventoryCppEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_4.h.pch"
+/Fo"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Module.Inventory.cpp.obj"
+/experimental:log "C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Module.Inventory.cpp.sarif"
+/sourceDependencies "C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Module.Inventory.cpp.dep.json"
+@"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Inventory.Shared.rsp"
+/d2ssa-cfg-question-
 /Zc:inline
 /nologo
 /Oi

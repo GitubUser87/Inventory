@@ -36,9 +36,9 @@
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
 /NOIMPLIB
-"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Intermediate\Build\Win64\x64\InventoryCppEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_4.h.obj"
-"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Module.Inventory.cpp.obj"
-"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Default.rc2.res"
+"C:\Users\D3303414\Source\Inventory\Intermediate\Build\Win64\x64\InventoryCppEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_4.h.obj"
+"C:\Users\D3303414\Source\Inventory\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Module.Inventory.cpp.obj"
+"C:\Users\D3303414\Source\Inventory\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Slate\UnrealEditor-Slate.lib"
@@ -69,6 +69,6 @@
 "synchronization.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Plugins\Inventory\Binaries\Win64\UnrealEditor-Inventory.dll"
-/PDB:"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Plugins\Inventory\Binaries\Win64\UnrealEditor-Inventory.pdb"
+/OUT:"C:\Users\D3303414\Source\Inventory\Plugins\Inventory\Binaries\Win64\UnrealEditor-Inventory.dll"
+/PDB:"C:\Users\D3303414\Source\Inventory\Plugins\Inventory\Binaries\Win64\UnrealEditor-Inventory.pdb"
 /ignore:4078

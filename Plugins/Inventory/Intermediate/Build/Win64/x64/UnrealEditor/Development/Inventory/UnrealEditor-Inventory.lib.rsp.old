@@ -6,7 +6,7 @@
 /NAME:"UnrealEditor-Inventory.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp\Intermediate\Build\Win64\x64\InventoryCppEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
-"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Module.Inventory.cpp.obj"
-"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Default.rc2.res"
-/OUT:"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\UnrealEditor-Inventory.lib"
+"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Intermediate\Build\Win64\x64\InventoryCppEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_4.h.obj"
+"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Module.Inventory.cpp.obj"
+"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\Default.rc2.res"
+/OUT:"C:\Users\D3303414\Source\repos\Inventory\InventoryCpp 5.5\Plugins\Inventory\Intermediate\Build\Win64\x64\UnrealEditor\Development\Inventory\UnrealEditor-Inventory.lib"
